@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Terrorism Data Analysis Tool</title>
+    <%= javascript_include_tag "prototype" %>
+    <%= stylesheet_link_tag 'style' %>
+  </head>
+  <body>
+    <h1>Terrorism Data Analysis Tool</h1>
+    <p><%= link_to 'Help', 'help.html' %> | <a href="#" onclick="Element.toggle('conditions_builder', 'show_1', 'hide_1')"><span id="show_1" style="display: none">Show</span><span id="hide_1">Hide</span> Conditions Builder</a> | <a href="#" onclick="Element.toggle('data_summary', 'show_2', 'hide_2')"><span id="show_2" style="display: none">Show</span><span id="hide_2">Hide</span> Individual Summaries</a> (Firefox recommended)</p>
+    
+    <div id="conditions_builder">
+    <fieldset>
+      <legend>Conditions Builder (optional)</legend>
+    <table>
+      <tr>
+        <td valign="top">
+            <p><%= select_tag :conditions_field, options_for_select([' -- select field -- '] | @conditions_variables.sort_by{ |x| x.name }.map{ |x| x.name }) %></p>
+            <%= observe_field :conditions_field, :update => 'conditions_form', :url => { :action => 'conditions_builder', :id => :conditions_field } %>
+            <div id="conditions_form">
+            </div>
+            <p>Note: Any change in search conditions will reset summary information below.</p>
+          </td>
+        </td>
+      </tr>
+    </table>
+    </fieldset>
+    </div>
+    <fieldset>
+      <legend>Current Conditions (if any)</legend>
+    <table>
+      <tr>
+        <td valign="top">
+            <div id="current_conditions">
+              <%= display_conditions %>
+            </div>
+            <p><%= link_to 'Download Dataset', :action => :download %> (CSV file compatible with Excel, current conditions apply)</p>
+          </td>
+        </td>
+      </tr>
+    </table>
+    </fieldset>
+    <fieldset>
+      <legend>Data Summary (this area will update when you change conditions above)</legend>
+    <table>
+      <tr><td><img alt="spinner" id="spinner" src="/images/ajax-loader.gif" style="display:none;" /></td></tr>
+      <tr>
+        <td valign="top">
+          <div id="data_summary">
+          <table>
+            <tr>
+          <td valign="top">
+            <%= form_remote_tag :update => 'field1_summary', :url => { :action => 'summarize' }, :loading => "Element.show('spinner');Element.hide('correlation_space');Element.hide('field1_summary')", :complete => "Element.hide('spinner');Element.show('field1_summary')" do -%>
+              <%= select_tag :field1, options_for_select([' -- select field -- '] | @summary_variables.sort_by{ |x| x.name }.map{ |x| x.name }) %>
+              <%= observe_field :field1, :update => 'field1_summary', :url => { :action => 'summarize' }, :with => "'field_name=field1&field_value=' + escape(value)", :loading => "Element.show('spinner');Element.hide('correlation_space');Element.hide('field1_summary')", :complete => "Element.hide('spinner');Element.show('field1_summary')" %>
+              <%= submit_tag 'Go', :id => :submit1, :class => 'formSubmit' %>
+            <%= end -%>
+            <div id="field1_summary">
+            </div>
+          </td>
+          <td valign="top">
+            <%= form_remote_tag :update => 'field2_summary', :url => { :action => 'summarize' }, :loading => "Element.show('spinner');Element.hide('correlation_space');Element.hide('field2_summary')", :complete => "Element.hide('spinner');Element.show('field2_summary')" %>
+              <%= select_tag :field2, options_for_select([' -- select field -- '] | @summary_variables.sort_by{ |x| x.name }.map{ |x| x.name }) %>
+              <%= observe_field :field2, :update => 'field2_summary', :url => { :action => 'summarize' }, :with => "'field_name=field2&field_value=' + escape(value)", :loading => "Element.show('spinner');Element.hide('correlation_space');Element.hide('field2_summary')", :complete => "Element.hide('spinner');Element.show('field2_summary')" %>
+              <%= submit_tag 'Go', :id => :submit2, :class => 'formSubmit' %>
+            <%= end_form_tag %>
+            <div id="field2_summary">
+            </div>
+          </td>
+          </tr>
+          </table>
+        </div>
+        </td>
+        <td valign="top">
+          <table>
+            <tr>
+          <td valign="top">
+              <%= form_remote_tag :update => 'correlation_space', :url => { :action => 'correlate' }, :loading => "Element.show('spinner');Element.hide('correlation_space')", :complete => "Element.hide('spinner');Element.show('correlation_space')" %>
+              <%= submit_tag 'Show Relationship', :id => :correlate1, :class => 'formSubmit' %>
+              <%= end_form_tag %>
+            <div id="correlation_space">
+            </div>
+          </td>
+          </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </fieldset>
+  </body>
+</html>
+
+

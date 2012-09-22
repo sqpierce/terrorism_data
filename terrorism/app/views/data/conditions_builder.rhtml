@@ -1,0 +1,12 @@
+<% form_remote_tag :update => 'current_conditions', :complete=>"eval(request.responseText)", :url=>{ :action=>:add_condition } do %>
+<p>
+<% if @field_type == 'categorical' %>
+  <%= @conditions_field %> <%= select_tag :conditions_operator, options_for_select(['=', '!='])%> <%= select_tag :conditions_target, options_for_select(@categories) %> <%= submit_tag 'Add Condition' %>
+<% else %>
+  <%= @conditions_field %> <%= select_tag :conditions_operator, options_for_select(['=', '>', '<'])%> <%= text_field :conditions_target, nil, :size=>10 %> <%= submit_tag 'Add Condition' %>
+<% end %>
+</p>
+<% if @field_type == 'date' %>
+<p>Date format: YYYY-MM-DD</p>
+<% end %>
+<% end %>

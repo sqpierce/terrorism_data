@@ -1,0 +1,124 @@
+<HTML>
+  <HEAD><TITLE>Terrorism DB Help</TITLE></HEAD>
+  <link href="/stylesheets/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <BODY>
+    <a name="top"></a>
+    <H1>Terrorism DB Help</H1>
+    <p>We have had a lot of great feedback from students on the Data Analysis Tool. Thanks for your input. There are a handful of changes in the works, which should be put in place by the middle of May 2007.</p>
+    <p>Unfortunately, it won't be possible to address all of your concerns by actually changing the application, so we would like to present some of the interesting problems here, and some possible solutions.</p>
+    <h3>List of Topics</h3>
+    <ul>
+      <li><a href="#MeaningOfNumbers">Confusion over the Meaning of Numbers</a></li>
+      <li><a href="#CreatingReadableBarGraphs">Creating Readable Bar Graphs</a></li>
+      <li><a href="#PrintingData">Printing Data</a></li>
+      <li><a href="#Miscellaneous">Miscellaneous Other Questions and Answers</a></li>
+    </ul>
+    <h3>Explanations</h3>
+    <ul>
+    <li>
+      <a name="MeaningOfNumbers"></a><a href="#top">^ back to top</a>
+      <p><b>Confusion over the Meaning of Numbers</b></p>
+      <p>There were several questions regarding confusion over what some of the numbers in the system represent.</p>
+      <p>This is best illustrated by looking at the variable "Fatalities"... The fatalities number shown is the mean number of fatalities per incident. Here is a graph showing the mean number of fatalities per incident by Country in the Middle East...</p>
+      <img src="images/help/4.png">
+      <p>The accompanying data table looks like this...</p>
+      <img src="images/help/5.png">
+      <p>Note that the column "n" refers <i>not</i> to the number of fatalities, but to the number of incidents associated with that Country. The number of fatalities is not shown. The actual number of fatalities per country would be a factor of the number of incidents times the mean per incident.</p>
+    </li>
+    <li>
+      <a name="CreatingReadableBarGraphs"></a><a href="#top">^ back to top</a>
+      <p><b>Creating Readable Bar Graphs</b></p>
+      <p>There were several questions regarding the bar graphs, and the way that the "legend" can interfere with the viewing of the data.</p>
+      <p>It is true that some types of graphs can be unreadable due to crowding. It may be possible to fix this to a certain extent, and I will look into it, but in the meantime, here are some things to try:</p>
+      <ul>
+        <li>
+          <p>Use the Conditions Builder to narrow the focus of the data being examined. For example, the following graph showing Suicide attacks by country is unreadable...</p>
+          <img src="images/help/1.png">
+          <p>But, if you narrow the search by selecting "Region = 'Middle East'" in the Conditions Builder, you get this...</p>
+          <img src="images/help/2.png">
+          <p>Also, note that if you were to reverse the order of the variables from Country on the left and Suicide on the right to Suicide on the left and Country on the right, then the "legend" would show the Country names, and "Yes" and "No" would be mapped on the horizontal of the graph. This is far less useful than the reverse. Better to put the variable with the fewer number of "categories" on the right.</p>
+          <img src="images/help/3.png">
+          <p>You can see that, given more countries, the "legend" would interfere with the data and become unreadable.</p>
+          <p>So, please use the Conditions Builder to narrow your search when the graphs become unreadable, and please be aware that in cases where you are comparing two categorical variables, the order of the variables does make a difference in the graph.</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a name="PrintingData"></a><a href="#top">^ back to top</a>
+      <p><b>Printing Data</b></p>
+      <p>Several suggestions were made about finding better ways to allow data to be recreated and printed for purposes of including in your papers.</p>
+      <p>These include: downloading the data set as an Excel file, downloading the data summary information as Excel file, and including better labeling, including conditions information in the graphs.</p>
+      <p>There are all excellent suggestions, and we will work on what we can. In the meantime, however, please use the following techniques...
+        <ul>
+        <li>download images by right-clicking on them (control-click on a Mac)</li>
+        <li>copy and paste table data into a text or Word file</li>
+        <li>use screen shots of data summary tables to include in your Word docs</li>
+        </ul>
+      <p>Note that the table in the "Meaning of Numbers" section above was recreated here as a graphic by taking a "screenshot" of the table on the data analysis tool screen. Your computer should be equipped with the ability to take a screenshot. On a Mac, you use shift-command-3 (whole screen) or shift-command-4 (partial screen).</p>
+      <img src="images/help/5.png">
+      <p>You could also use the copy-and-paste or screenshot techniques to capture conditions information. Just please make sure you remember which graphs and tables go with which conditions. Unfortunately, at this time, there is some burden on the user to keep track of this information.</p>
+    </li>
+    <li>
+      <a name="Miscellaneous"></a><a href="#top">^ back to top</a>
+      <p><b>Miscellaneous Other Questions and Answers</b></p>
+      <ul>
+      <li>Q: What does "!=" mean?
+        <br/>A: Not equal to. In other words, if you want to look at terrorist attacks everywhere <i>except</i> the Middle East, use "Region != 'Middle East'".</li>
+      <li>Q: What does "Proportion of Shared Variance" mean?
+        <br/>A: This is a number between 0 and 1 which indicates the extent to which one variable can be predicted by looking at the other variable. The closer to 1 this number is, the more likely it is that you could predict one variable from another.</li>
+      <li>Q: Why do there seem to be fewer incidents in the "Relationship section" (on the right), than appear in the "Individual Summary section" (on the left)?
+        <br/>A: The system generally will ignore incidents where there is no value or a value of "Unknown" for a particular variable. When comparing two variables, if <i>either one</i> is "Unknown", that incident will be ignored.</li>
+      <li>Q: Why can I not see some particular number for some incident that I know to be true? (For example, there is not a large number of "US_Injuries" for the World Trade Center bombing in 1993?
+        <br/>A: Some pieces of data are simply missing from the database. Empty fields or fields marked "Unknown" are generally ignored. There are 1042 Injuries recorded for the 1993 WTC attack, but the "US_Injuries" field appears to be missing. That is because US_Injuries has "Unknown" for its value, probably because it is simply unknown how many of those injured in this attack were US citizens. If you see this kind of discrepancy for a particular incident, it is probably for a reason like this. The tool is not really best used to try to look at individual incidents, but rather to get a sense of underlying trends across a range of terrorist attacks.</li>
+      </ul>
+    </li>
+    </ul>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+    <BR/>
+  </BODY>
+</HTML>
+

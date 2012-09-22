@@ -1,0 +1,1467 @@
+.ig >>
+<STYLE TYPE="text/css">
+<!--
+        A:link{text-decoration:none}
+        A:visited{text-decoration:none}
+        A:active{text-decoration:none}
+        OL,UL,P,BODY,TD,TR,TH,FORM { font-family: arial,helvetica,sans-serif;; font-size:small; color: #333333; }
+
+        H1 { font-size: x-large; font-family: arial,helvetica,sans-serif; }
+        H2 { font-size: large; font-family: arial,helvetica,sans-serif; }
+        H3 { font-size: medium; font-family: arial,helvetica,sans-serif; }
+        H4 { font-size: small; font-family: arial,helvetica,sans-serif; }
+-->
+</STYLE>
+<title>ploticus: pl(1)</title>
+<body bgcolor=D0D0EE vlink=0000FF>
+<br>
+<br>
+<center>
+<table cellpadding=2 bgcolor=FFFFFF width=550><tr>
+<td>
+  <table cellpadding=2 width=550><tr>
+  <td><br><h2>pl(1)</h2></td>
+  <td align=right>
+  <small>
+  <a href="../doc/welcome.html"><img src="../doc/ploticus.gif" border=0></a><br>
+  Version 2.40 Jan'08
+  <td></tr></table>
+</td></tr>
+<td>
+<br>
+<br>
+.>>
+
+.TH pl(1) PL "15-JAN-2008   PL ploticus.sourceforge.net"
+
+.SH Name
+pl
+
+.SH Synopsis
+\fCpl  -prefab \fIprefabname\fC   \fIparm=value\fC ..  [\fI-options\fR]
+.br
+\0.. OR ..
+.br
+\fCpl \fIscriptfile\fC  [\fI-options\fC]  
+
+.ig >>
+<br><br><br>
+.>>
+.ig >>
+<table cellpadding=2 border=0 ><tr bgcolor=FFFFEC><td colspan=2>
+<b>Quick links for finding things on this page:</b>
+</td></tr><tr bgcolor=FFFFEC><td valign=top>
+<ul>
+  <li> <a href="#description">Description</a>
+  <li> <a href="#findexamples">Where to find examples</a>
+  <li> <a href="#options">Command line arguments</a>
+  <br> &nbsp; &nbsp; <a href="#basic">Basic options</a>
+  <br> &nbsp; &nbsp; <a href="#varvalue">Setting ploticus variables</a>
+  <br> &nbsp; &nbsp; <a href="#resultformat">Result format options</a>
+  <br> &nbsp; &nbsp; <a href="#clickmap">Clickmap and mouseover</a>
+  <br> &nbsp; &nbsp; <a href="#resultsize">Result sizing options</a>
+  <br> &nbsp; &nbsp; <a href="#graphic">Graphics environment options</a>
+  <br> &nbsp; &nbsp; <a href="#capacity">Capacity setting options</a>
+  <br> &nbsp; &nbsp; <a href="#svg">SVG / XML options</a>
+  <br> &nbsp; &nbsp; <a href="#interact">Interactive / workstation options</a>
+  <br> &nbsp; &nbsp; <a href="#paper">Paper orientation options</a>
+  <br> &nbsp; &nbsp; <a href="#debug">Development & debugging options</a>
+</td><td valign=top>
+  <li> <a href="#outfile">Naming of the result file(s)</a>
+  <li> <a href="#examples">Usage examples</a>
+  <li> <a href="#environment">Environment</a>
+  <li> <a href="#bugs">Bugs</a>
+  <li> <a href="#author">Author, Copyright, Licensing</a>
+  <li> <a href="#seealso">See also</a>
+</td></tr></table>
+.>>
+
+.ig >>
+<a name=description></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+.SH Description
+\fBpl\fR is the primary component of the 
+.ig >>
+<a href="http://ploticus.sourceforge.net">
+.>>
+\0'ploticus' data display package
+.ig >>
+</a>
+.>>
+.LP
+\fBpl\fR is a program that produces plots and charts from data, and 
+produces results that can be viewed on web pages, paper, slides,
+or interactively on the screen.  Standard types of plots may be
+done using
+.ig >>
+<a href="prefabs.html">
+.>>
+\0prefab plot templates
+.ig >>
+</a>
+.>>
+, or a user-developed 
+.ig >>
+<a href="scripts.html">
+.>>
+\0script file
+.ig >>
+</a>
+.>>
+may be supplied for greater flexibility and customization.
+\fBpl\fR may be executed from the command line or 
+.ig >>
+<a href="cgi.html">
+.>>
+\0as a CGI program.
+.ig >>
+</a>
+.>>
+.LP
+For complete online docs and downloads see 
+.ig >>
+<a href="http://ploticus.sourceforge.net">
+.>>
+\0http://ploticus.sourceforge.net
+.ig >>
+</a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+
+.ig >>
+<a name=findexamples></a>
+.>>
+
+.SH Where to find examples
+See the various
+.ig >>
+<a href="prefabs.html">
+.>>
+\0prefab examples
+.ig >>
+</a>
+.>>
+\0.
+A large number of 
+.ig >>
+<a href="../gallery/index.html">
+.>>
+\0script examples
+.ig >>
+</a>
+.>>
+are also available.
+Some 
+.ig >>
+<a href="#examples">
+.>>
+\0usage examples
+.ig >>
+</a>
+.>>
+are also shown below.
+
+
+.ig >>
+<br><br><br>
+.>>
+.ig >>
+<a name=options></a>
+<br>
+.>>
+
+.SH Command line arguments
+
+.LP
+Command line arguments may generally be given in any order.
+If there are arguments that you want to always have in effect, you can invoke them from a
+.ig >>
+<a href="config.html">
+.>>
+\0config file.
+.ig >>
+</a>
+.>>
+Many settings can also be made dynamically from scripts via
+.ig >>
+<a href="settings.html">
+.>>
+\0proc settings
+.ig >>
+</a>
+.>>
+or
+.ig >>
+<a href="page.html">
+.>>
+\0proc page.
+.ig >>
+</a>
+.>>
+Processing occurs in this order: first the config file is read; then command line args are processed (left to right); 
+then 
+.ig >>
+<a href="page.html">
+.>>
+\0proc page
+.ig >>
+</a>
+.>>
+and/or 
+.ig >>
+<a href="settings.html">
+.>>
+\0proc settings.
+.ig >>
+</a>
+.>>
+Later settings override earlier ones.
+
+
+.ig >>
+<a name=basic></a>
+.>>
+.ig >>
+<br><br>
+.>>
+
+.SH Basic command line options
+.LP
+\fB-prefab\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIprefabname\fR
+.IP \0
+Produce a plot using a 
+.ig >>
+<a href="prefabs.html">
+.>>
+\0prefab
+.ig >>
+</a>
+.>>
+plot template.
+\fIprefabname\fR identifies the template, eg.
+\fCcron\fR or \fCvbars\fR.
+Necessary parameters are supplied on the command line using the form \fIparm=value\fR.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fIscriptfile\fR  
+.br
+\fB-f \fIscriptfile\fR
+.IP \0
+names a
+.ig >>
+<a href="scripts.html">
+.>>
+\0script file
+.ig >>
+</a>
+.>>
+that will be interpreted to produce results.
+Alternatively, \fB-stdin\fR may be used to indicate
+that script will be available on standard input.
+
+.ig >>
+<br><br>
+.>>
+
+.ig >>
+<a name=varvalue></a>
+.>>
+.LP
+\fIvariable\fC=\fIvalue\fR
+.IP \0
+Declares the named
+\fIvariable\fR and sets it to the given \fIvalue\fR.  
+This is a convenient way to pass information
+to prefabs and scripts.  Variable names are case-sensitive.
+.br
+Example: \fCCUTDATE=10-31-98\fR
+.br
+sets the variable \fCCUTDATE\fR to \fC10-31-98\fR.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-o 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIoutfile\fC | stdout\fR
+.IP \0
+Specify a filename where the result will be written.
+No processing is applied to this name.. so the ending should be appropriate for
+the selected output format, eg. use \fC.png\fR for PNG files.
+If \fC-o stdout\fR is used,
+result will be sent to standard output.  
+If \fB-o\fR is not specified, a 
+.ig >>
+<a href="#outfile">
+.>>
+\0default output filename
+.ig >>
+</a>
+.>>
+will be used.  
+.br
+Example: \fC-o fp001.png\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-dir 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIdirname\fR
+.IP \0
+Set ploticus' working directory to \fIdirname\fR.
+If used, this argument should be specified leftmost on the command line, 
+since it affects evaluation of other args.
+
+
+.ig >>
+<a name=resultformat></a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+
+.SH Result format options
+.LP
+(Availability depends on your ploticus configuration/build)
+.LP
+\fB-png \fR 
+.ig >>
+&nbsp; &nbsp; &nbsp;
+.>>
+PNG image
+
+.LP
+\fB-gif \fR
+.ig >>
+&nbsp; &nbsp; &nbsp; &nbsp;
+.>>
+pseudo-GIF image
+
+.LP
+\fB-jpeg\fR
+.ig >>
+&nbsp; &nbsp; 
+.>>
+JPEG image 
+
+.LP
+\fB-svg\fR or \fB-svgz\fR
+.ig >>
+&nbsp; &nbsp; &nbsp;
+.>>
+.ig >>
+<a href="svg.html">
+.>>
+\0SVG
+.ig >>
+</a>
+.>>
+graphic.  
+See also SVG / XML options below.
+
+.LP
+\fB-swf\fR
+.ig >>
+&nbsp; &nbsp; &nbsp;
+.>>
+.ig >>
+<a href="swf.html">
+.>>
+\0SWF
+.ig >>
+</a>
+.>>
+(flash) result.
+
+.LP
+\fB-wbmp\fR
+.ig >>
+&nbsp; 
+.>>
+WBMP image
+
+
+.LP
+\fB-eps \fR
+.ig >>
+&nbsp; &nbsp; &nbsp;
+.>>
+EPS (encapsulated PostScript) 
+
+.LP
+\fB-ps \fR
+.ig >>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+.>>
+paginated PostScript to stdout
+
+.LP
+\fB-x11 \fR
+.ig >>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+.>>
+display on X11 screen
+
+.LP
+\fB-drawdump\fR
+\fIfilename\fR
+.ig >>
+&nbsp; &nbsp;
+.>>
+produce no visible graphic; save a generic representation of the graphic result to a file.
+By using \fC-drawdump\fR and \fC-drawdumpa\fR you can easily 
+.ig >>
+<a href="prefabs.html#drawdump">
+.>>
+\0overlay or combine results from separate pl runs.
+.ig >>
+</a>
+.>>
+The drawdump file can be rendered later in any desired format, using this command:
+\fCpl -prefab draw dumpfile=\fIfilename\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+or by using
+.ig >>
+<a href="drawcommands.html">
+.>>
+\0proc drawcommands.
+.ig >>
+</a>
+.>>
+Drawdump capability is available in all builds. (2.30+)
+.LP
+\fB-drawdumpa\fR
+\fIfilename\fR
+.ig >>
+&nbsp; &nbsp;
+.>>
+same as \fC-drawdump\fR but result is \fBappended\fR to file.
+
+
+
+.ig >>
+<a name=clickmap></a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+.SH Clickable image maps and mouseover options
+
+.LP
+\fB-csmap\fR
+.IP \0
+produce a 
+.ig >>
+<a href="clickmap.html">
+.>>
+\0client-side clickable imagemap
+.ig >>
+</a>
+.>>
+to accompany a png, gif, or jpeg.
+These can be used for hyperlinks, and also for providing
+pop-up text labels that appear when the mouse passes over a region.
+By default, client-side map content is written to stdout.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-csmapdemo\fR
+.IP \0
+Same as \fB-csmap\fR but all mapped regions are shown outlined in green,
+and a complete HTML chunk is produced which involves the output image name.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-mapfile\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIfilename\fC | stdout | stderr\fR
+.IP \0
+explicitly name the output file containing the map info.  The name may also be set in 
+.ig >>
+<a href="page.html">
+.>>
+\0proc page.
+.ig >>
+</a>
+.>>
+If a name is not specified, client-side image map info will be written to stdout;
+For SVG this parameter is not needed, since image map info is embedded in the SVG file.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fB-map\fR
+.IP \0
+produce a 
+.ig >>
+<a href="clickmap.html">
+.>>
+\0server-side clickable imagemap file
+.ig >>
+</a>
+.>>
+to accompany a png, gif, jpeg, or SVG.   
+\fBNote: server-side maps are deprecated.\fR
+
+.ig >>
+<a name=resultsize></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+
+.SH Result sizing options
+.LP
+\fB-scale\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIsx\fR[,\fIsy\fR]
+.IP \0
+Scale the final result.
+If one value is given, the result is scaled by this amount in both x and y.
+If two values are given, scaling in x and scaling in y may be done independently.
+A scale value of less than 1.0 reduces the
+size; an scale value of greater than 1.0 enlarges.  
+Scaling is done relative to the origin (0,0) which is at the lower left.
+.br
+Example: \fC-scale 0.7\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-pagesize\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIwidth,height\fR
+.IP \0
+Sets the pre-crop size of the result image for GIF/PNG/JPEG, or sets the display window size when drawing to X11.  
+On other output devices this option does nothing.
+\fIwidth\fR and \fIheight\fR are in 
+.ig >>
+<a href="attributetypes.html#positionunits">
+.>>
+\0absolute units.
+.ig >>
+</a>
+.>>
+0,0 is the lower left corner.
+If -pagesize is not specified, the default size will be 8" x 8".
+Size is set before any drawing takes place and is unaffected by the -scale option.
+.IP
+When rendering PNG/GIF/JPEG images, this option determines amount of internal memory allocation for accommodating the image.
+The result can never be bigger than this size, and any drawing outsize the bounds will not be visible.
+\fBTo create PNG/GIF/JPEG images larger than 8" x 8", this option MUST be specified to set a bigger size.\fR
+Cropping options (below) can be used along with -pagesize as long as they result in a smaller rectangle
+than the pagesize; they take effect after all drawing has been completed.
+.IP
+\fB-pagesize\fR has no effect with EPS or paginated PostScript results (the PostScript
+BoundingBox will be determined by the extent of the graphic).
+.IP
+Example: \fC-pagesize 7,3\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-tightcrop\fR
+.IP \0
+For image or EPS output, crop the result tightly to the extent of
+the design.  Normally a small margin is allowed on all four sides.
+This option sometimes crops a bit too tight; if so try \fB-croprel\fR.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-crop\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIx1,y1,x2,y2\fR
+.IP \0
+Crop image or EPS result to the box specified by
+\fIx1,y1\fR and \fIx2,y2\fR, in 
+.ig >>
+<a href="attributetypes.html#positionunits">
+.>>
+\0absolute units.
+.ig >>
+</a>
+.>>
+
+Note that there may be no spaces in the coordinates specification.
+Cropping takes place after design is rendered and does not
+affect coordinate locations.
+.br
+Example: \fC-crop 1.2,0.8,4.4,5.2\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-croprel\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIleft,bottom,right,top\fR
+.IP \0
+Crop image or EPS result tightly to the extent of the design (like \fB-tightcrop\fR),
+but then adjust the cropping outward or inward on one or more sides.
+\fIleft\fR is the amount to adjust the left side, in 
+.ig >>
+<a href="attributetypes.html#positionunits">
+.>>
+\0absolute units.
+.ig >>
+</a>
+.>>
+Similarly for \fIbottom\fR, \fIright\fR, and \fItop\fR.
+Positive values always adjust outward from center; negative values adjust inward (tighter).
+There may be no spaces in the \fIleft,bottom,right,top\fR specification.
+Cropping takes place after design is rendered and does not
+affect coordinate locations.
+.br
+Example: \fC-croprel 0,-0.1,0,0.1\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-pixsize\fR
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIwidth,height\fR
+.IP \0
+If specified, result PNG/GIF/JPG image will be created at exactly this width and height in pixels.
+Does not interact with scaling or cropping... user is responsible for ensuring that content fits appropriately into the specified size.
+User is also responsible for setting -pagesize appropriately for larger images.
+New in 2.40
+
+.ig >>
+<a name=graphic></a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+
+
+.SH Graphics environment options
+.LP
+\fB-font\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIfont\fR 
+.IP \0
+sets the overall font to \fIfont\fR.  See
+.ig >>
+<a href="fonts.html">
+.>>
+\0fonts
+.ig >>
+</a>
+.>>
+for more info.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-textsize\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIpointsize\fR 
+.IP \0
+sets the overall default textsize to \fIpointsize\fR.
+All embedded size specifications will be rendered relative to this.
+
+.ig >>
+<br><br><br>
+.>>
+
+.LP
+\fB-linewidth\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIw\fR 
+.IP \0
+sets the overall default linewidth to \fIw\fR.
+All embedded line width specifications will be rendered relative to this.
+See linedetails(pli) for more on line width.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fB-color\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+.ig >>
+<a href="color.html">
+.>>
+\0color
+.ig >>
+</a>
+.>>
+.IP \0
+sets the overall default text and line drawing color to \fIcolor\fR.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-backcolor\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+.ig >>
+<a href="color.html">
+.>>
+\0color
+.ig >>
+</a>
+.>>
+.IP \0
+sets the background color to \fIcolor\fR.
+
+.ig >>
+<br><br>
+.>>
+
+.ig >>
+<a name=cm></a>
+.>>
+.LP
+\fB-cm\fR
+.ig >>
+&nbsp; &nbsp;
+.>>
+.IP \0
+Use centimeters as your absolute units, instead of inches.
+On the command line this must appear to the left of any arguments dealing with
+absolute unit values, such as -pagesize.
+Centimeter absolute units can also be set via
+.ig >>
+<a href="../doc/settings.html">
+.>>
+\0proc settings.
+.ig >>
+</a>
+.>>
+If cm will always be the desired
+absolute units, the preferred way to achieve this is by using 
+\fCunits: cm\fR in a 
+.ig >>
+<a href="../doc/config.html">
+.>>
+\0ploticus config file.
+.ig >>
+</a>
+.>>
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-inches\fR
+.IP \0
+Use inches as your absolute units.  This is the default.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-outlabel\fR  
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIlabel\fR
+.IP \0
+Set the label or title for the output.  For X11 this sets the window title;
+for PostScript and SVG it sets the \fC%%Title\fR attribute.
+
+.ig >>
+<a name=capacity></a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+.SH Capacity setting options
+These options (new with version 2.10) allow capacities to be raised for accomodation 
+of very large data sets, or lowered to minimize memory usage.
+The defaults in this section are defined in \fCpl.h\fR.
+.LP
+\fB-maxrows 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fInrows\fR
+.IP \0
+Set the capacity for data rows to \fInrows\fR.  Default \fInrows\fR is 10,000.
+Ploticus will allocate one pointer for each row.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-maxfields 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fInfields\fR
+.IP \0
+Set the capacity for data fields to \fInfields\fR.  Default \fInfields\fR is 200,000.
+Ploticus will allocate one pointer for each field.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-maxproclines  
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fInlines\fR
+.IP \0
+Set the capacity for script lines for active procs to \fInlines\fR.
+Default \fInlines\fR is 5000.
+Active procs are the current proc, all \fC#save\fRd procs, and
+all proc getdata procs that contain embedded \fCdata\fR.
+Ploticus will allocate one pointer for each line in each active proc.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-maxvector  
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIncells\fR
+.IP \0
+Set the capacity for the data plotting vector to \fIncells\fR.
+Default \fIncells\fR is 100,000.
+The data plotting vector is an array which holds plottable
+values for situations where the values must be sorted or pre-screened for
+bad values.  Ploticus will allocate one \fCdouble\fR value for each cell.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fB-maxdrawpoints
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIn\fR
+.IP \0
+Use this if you need to render a polygon having more than 500 points in PNG/GIF/JPEG, X11, or SWF, or
+any continuous line having more than 500 points in SWF.
+
+.ig >>
+<br><br>
+.>>
+.LP
+Note: raising the maximum number of categories may be done using
+.ig >>
+<a href="categories.html">
+.>>
+\0proc categories
+.ig >>
+</a>
+.>>
+from within the script.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fB-cpulimit\fR
+#Include nbsp2
+\fIs\fR
+.IP \0
+Set unix resource limit on cpu time to \fIs\fR seconds.  Default is 30 seconds.  
+New in 2.40
+
+
+.ig >>
+<br><br><br>
+.>>
+.ig >>
+<a name=svg></a>
+.>>
+
+.SH SVG / XML options:
+
+.LP
+\fB-svg_tagparms\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIstring\fR
+.IP \0
+This allows arbitrary \fCtext\fR to be inserted into the opening \fC<svg>\fR tag.
+.br
+Example: \fC-svg_tagparms 'height="10cm" width="15cm"'\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-omit_xml_declaration\fR  
+.IP \0
+By default the first line of the SVG result will be the XML declaration \fC<?xml .. >\fR .
+Use this option to suppress the XML declaration line if
+the SVG result is to be embedded into a larger XML document.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-xml_encoding\fR  
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fImethod\fR
+.IP \0
+Set the XML character encoding method.  This encoding will be indicated in the XML declaration line.
+The default is \fCiso-8859-1\fR which provides Latin and Western European character sets.
+For Unicode fonts this should be set to \fCutf-8\fR (for more discussion see the Unicode section in
+.ig >>
+<a href="fonts.html">
+.>>
+\0fonts
+.ig >>
+</a>
+.>>
+).
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-tag\fR 
+.IP \0
+Causes a suitable
+HTML \fC<EMBED>\fR tag to be written to standard output.  
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-zlevel \fIn\fR 
+.IP \0
+This may be used to set the compression level to \fIn\fR for SVGZ output
+(0 - 9 where 9 is highest level of compression and the default).
+
+
+.ig >>
+<a name=interact></a>
+.>>
+
+.ig >>
+<br><br><br>
+.>>
+.SH Interactive (workstation) use options 
+.LP
+\fB-winloc\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIx,y\fR
+.IP \0
+Control where on the screen the upper-left corner of the X11 display
+window will be placed.  \fIx\fR and \fIy\fR are in pixels.
+Example: \fC-winloc 200 0\fR
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-v\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIcommand\fR
+.br
+\fB-viewer\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIcommand\fR
+.IP \0
+After generating results in the specified format, execute \fIcommand\fR
+in order to view the results on your screen.  
+The output file will automatically be
+included in the \fIcommand\fR.  For example, if a GIF file is being
+generated you might use this to invoke the xv utility: \fC-viewer xv\fR.  
+If PostScript is being generated you could use something like this to
+invoke the ghostview utility: \fC-viewer "gv -magstep -1"\fR.
+The given command must be available on your system and locatable in
+your command search path.
+This option may not be used with \fC-o stdout\fR.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-noshell\fR
+.IP \0
+If specified, ploticus is prohibited from issuing any shell commands.
+This is a security feature useful for example when running a script that
+was sent to you by an unknown party.  New in 2.31
+
+
+.ig >>
+<a name=paper></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+
+.SH Paper orientation options
+.LP
+\fB-landscape\fR  
+.IP \0
+For paginated postscript, set paper orientation to landscape (oblong).
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-portrait\fR  
+.IP \0
+For paginated postscript, set paper orientation to portrait.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-posteroffset\fR  
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIx,y\fR
+.IP \0
+Allows production of large-size posters made up of multiple standard
+sheets of paper butted together.  May be used only with paginated PostScript,
+and should be used in combination with the \fC-scale\fR and \fC-textsize\fR
+options.  \fIx,y\fR is the point within your result (in
+.ig >>
+<a href="attributetypes.html#positionunits">
+.>>
+\0absolute units
+.ig >>
+</a>
+.>>
+) that is to be placed at the lower left corner of the page.
+For further discussion of this, see
+.ig >>
+<a href="posters.html">
+.>>
+\0posters
+.ig >>
+</a>
+.>>
+\0.
+
+.ig >>
+<a name=debug></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+
+.SH Development and debugging options
+.LP
+\fB-debug\fR
+.IP \0
+Debug mode.  Causes dianostic information to be written to the 
+diagnostic stream (stderr by default, see \fC-diagfile\fR below).
+Highly recommended if you are experiencing difficulty.
+Best to 
+use \fC-debug\fR as the first (leftmost) argument so that it can report
+on all arguments gotten.
+Another effect of debug mode is that any temporary files are not removed upon termination.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fB-ping\fR
+.IP \0
+Write the ploticus name and version number to standard output and exit.  versions 2.33+
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-echo\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fC[ diag | stdout]\fR
+.IP \0
+Write ploticus script lines as they are executed.  Lines are written to 
+the diagnostic stream (standard error by default) or standard output.
+Lines are written after variables
+and most script directives, including flow-of-control directives, are evaluated.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-showbad\fR
+.IP \0
+Identify unplottable data, showing the value, and its row and field.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-diagfile\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIfilename | stderr | stdout\fR
+.IP \0
+All non-error messages and output will be written to this file (default is stderr).
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-errmsgpre\fR
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fItag\fR
+.IP \0
+Allows developer to set the first portion of all ploticus error messages to \fCtag\fR
+for purposes of presentation or identification.
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-errfile\fR 
+.ig >>
+&nbsp; &nbsp;
+.>>
+\fIfilename | stderr | stdout\fR
+.IP \0
+All error messages will be written to this file (default is stderr).
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fB-help\fR or \fB-?\fR or \fB-version\fR
+.IP \0
+Print version number, copyright info, web site address, etc.
+
+
+.ig >>
+<br><br><br>
+.>>
+
+.ig >>
+<a name=outfile></a>
+.>>
+
+.SH Output file names
+The output file may be specified on the command line using the \fB-o\fR option,
+or via Proc Page's outfilename attribute.
+If so, the result is written to a file of that name.
+\fC-o stdout\fR may also be used to send result to standard output.
+.LP
+Otherwise, if your script filename has a "recognized extension"
+.\" a prefab is being used or 
+( \fB.p\fR, \fB.pl\fR, \fB.plo\fR, \fB.pls\fR, \fB.htm\fR or \fB.html\fR ),
+the base part of the script file name is used and \fC.png\fR, \fC.gif\fR, etc.
+is appended.  If your script filename doesn't have a recognized extension, the 
+generic name \fCout.*\fR will be used.
+.LP
+X11 output is always displayed on the screen, and
+paginated PostScript is written to standard output unless \fC-o\fR is used.
+.LP
+If page breaks (Proc Page) are encountered when rendering in any format other
+than paginated PostScript,
+special action is necessary since each page must go into a separate file.  
+A Proc Page \fCoutfilename\fR may be specified for each page;
+otherwise a \fCp\fIn\fR prefix will be attached to the beginning of
+each page's output file name to indicate page \fIn\fR.
+.LP
+If a 
+.ig >>
+<a href="clickmap.html">
+.>>
+\0clickmap
+.ig >>
+</a>
+.>>
+is being generated, the result file is named similarly to the above.
+
+.ig >>
+<a name=examples></a>
+.ig >>
+<br><br><br>
+.>>
+
+.SH Usage examples
+.LP
+The following example uses the 
+.ig >>
+<a href="scat.html">
+.>>
+\0scat prefab:
+.ig >>
+</a>
+.>>
+.IP \0
+\fCpl -prefab scat -png datafile=results.dat x=2 y=3\fR
+
+.LP
+The following examples assume
+that you have a script file called \fClineplot1.p\fR.
+.IP \0
+ \fCpl -x lineplot1.p\fR = view on X11 screen
+.IP
+ \fCpl -png lineplot1.p\fR = create PNG image lineplot1.png
+.IP
+ \fCpl -gif lineplot1.p -o stdout\fR = create GIF image on standard output
+.IP
+ \fCpl -gif lineplot1.p -viewer xv\fR = produce GIF and view using xv 
+(assuming xv image viewer is available on your system).
+.IP
+ \fCpl -eps lineplot1.p\fR = produce EPS file lineplot1.eps
+.IP
+ \fCpl -eps lineplot1.p -viewer gv\fR = produce EPS and view using gv 
+(that's ghostview, assuming it is available on your system).
+.IP
+ \fCpl -eps lineplot1.p -o lineplot.eps\fR = produce EPS into file lineplot.eps
+.IP
+ \fCpl -ps lineplot1.p | lp\fR = produce paginated postscript and send to
+unix lp print spooler.
+.IP
+ \fCpl -ps lineplot1.p -veiwer gv\fR = produce paginated postscript
+and view using ghostview.
+
+.ig >>
+<br><br><br>
+.>>
+.ig >>
+<a name=environment></a>
+.>>
+.SH Environment
+.LP
+\fBPLOTICUS_CONFIG\fR 
+.IP \0
+The name of a 
+.ig >>
+<a href="config.html">
+.>>
+\0ploticus configuation file
+.ig >>
+</a>
+.>>
+, for setting default date notations, number
+notations, measurement units, etc.  
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fBPLOTICUS_PREFABS\fR
+.IP \0
+The path name of a directory where ploticus will look for
+.ig >>
+<a href="prefabs.html">
+.>>
+\0prefab
+.ig >>
+</a>
+.>>
+scripts.  The "factory" prefabs are located in 
+the ploticus ./prefabs subdirectory.
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fBLC_CTYPE\fR, \fBLC_COLLATE\fR, \fBLANG\fR
+.IP \0
+Locale support.  Thanks to Oleg Bartunov oleg@sai.msu.su
+for contributing this.  \fBpl\fR must be 
+built with -DLOCALE for this to work.
+
+
+.ig >>
+<br><br>
+.>>
+.LP
+\fBTDH_ERRMODE\fR
+.IP \0
+Control the disposition of error messages.  Allowable values: \fCstderr\fR
+which is the default, and \fCcgi\fR which causes error messages to be written 
+to stdout with html formatting.
+
+.ig >>
+<br><br><br>
+.>>
+.ig >>
+<a name=bugs></a>
+.>>
+
+.SH Bugs
+Ploticus has some stated
+.ig >>
+<a href="limits.html">
+.>>
+\0limitations
+.ig >>
+</a>
+.>>
+(mostly related to capacities that you may run into if you're dealing with large data sets).  
+To report problems or get help see the
+.ig >>
+<a href="support.html">
+.>>
+\0ploticus support page.
+.ig >>
+</a>
+.>>
+
+.ig >>
+<a name=author></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+
+.SH Author, Copyright, Licensing
+The primary author is 
+.ig >>
+<a href="http://ploticus.sourceforge.net/steve.html">
+.>>
+\0Stephen C. Grubb.
+.ig >>
+</a>
+.>>
+Ploticus covered by the General Public License (GPL)... please see the
+.ig >>
+<a href="Copyright.html">
+.>>
+\0ploticus copyright page
+.ig >>
+</a>
+.>>
+for more info.
+
+.ig >>
+<a name=seealso></a>
+.>>
+.ig >>
+<br><br><br>
+.>>
+
+.SH See also
+.ig >>
+<a href="http://ploticus.sourceforge.net">
+.>>
+\0http://ploticus.sourceforge.net
+.ig >>
+</a>
+.>>
+
+.ig >>
+<br>
+<br>
+</td></tr>
+<td align=right>
+<a href="../doc/welcome.html">
+<img src="../doc/ploticus.gif" border=0></a><br><small>data display engine &nbsp; <br>
+<a href="../doc/Copyright.html">Copyright Steve Grubb</a>
+<br>
+<br>
+<center>
+<img src="../gallery/all.gif"> 
+</center>
+</td></tr>
+</table>
+<br>
+<center>
+Ploticus is hosted at http://ploticus.sourceforge.net <br>
+<img src="http://sourceforge.net/sflogo.php?group_id=38453" width="88" height="31" border="0" alt="SourceForge Logo">
+</center>
+.>>

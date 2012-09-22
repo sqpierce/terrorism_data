@@ -1,0 +1,1214 @@
+<?xml version='1.0'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 500 300' a3:scriptImplementation='Adobe' height='300' xmlns:a3='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' width='500' xmlns='http://www.w3.org/2000/svg'>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!-- Created with SVG::Graph -->
+    <!-- SVG::Graph by Sean E. Russell -->
+    <!-- Losely based on SVG::TT::Graph for Perl by Leo Lapworth & Stephan Morgan -->
+    <!-- //////////////////////////////////////////////////////////////////-->
+  <defs>
+    <style type='text/css'><![CDATA[/* Copy from here for external style sheet */
+.svgBackground{
+  fill:#ffffff;
+}
+.graphBackground{
+  fill:#f0f0f0;
+}
+
+/* graphs titles */
+.mainTitle{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+.subTitle{
+  text-anchor: middle;
+  fill: #999999;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.axis{
+  stroke: #000000;
+  stroke-width: 1px;
+}
+
+.guideLines{
+  stroke: #666666;
+  stroke-width: 1px;
+  stroke-dasharray: 5 5;
+}
+
+.xAxisLabels{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisLabels{
+  text-anchor: end;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.xAxisTitle{
+  text-anchor: middle;
+  fill: #ff0000;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisTitle{
+  fill: #ff0000;
+  text-anchor: middle;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.dataPointLabel{
+  fill: #000000;
+  text-anchor:middle;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.staggerGuideLine{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.5px;  
+}
+
+/* default line styles */
+.line1{
+	fill: none;
+	stroke: #ff0000;
+	stroke-width: 1px;	
+}
+.line2{
+	fill: none;
+	stroke: #0000ff;
+	stroke-width: 1px;	
+}
+.line3{
+	fill: none;
+	stroke: #00ff00;
+	stroke-width: 1px;	
+}
+.line4{
+	fill: none;
+	stroke: #ffcc00;
+	stroke-width: 1px;	
+}
+.line5{
+	fill: none;
+	stroke: #00ccff;
+	stroke-width: 1px;	
+}
+.line6{
+	fill: none;
+	stroke: #ff00ff;
+	stroke-width: 1px;	
+}
+.line7{
+	fill: none;
+	stroke: #00ffff;
+	stroke-width: 1px;	
+}
+.line8{
+	fill: none;
+	stroke: #ffff00;
+	stroke-width: 1px;	
+}
+.line9{
+	fill: none;
+	stroke: #ccc6666;
+	stroke-width: 1px;	
+}
+.line10{
+	fill: none;
+	stroke: #663399;
+	stroke-width: 1px;	
+}
+.line11{
+	fill: none;
+	stroke: #339900;
+	stroke-width: 1px;	
+}
+.line12{
+	fill: none;
+	stroke: #9966FF;
+	stroke-width: 1px;	
+}
+/* default fill styles */
+.fill1{
+	fill: #cc0000;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill2{
+	fill: #0000cc;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill3{
+	fill: #00cc00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill4{
+	fill: #ffcc00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill5{
+	fill: #00ccff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill6{
+	fill: #ff00ff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill7{
+	fill: #00ffff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill8{
+	fill: #ffff00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill9{
+	fill: #cc6666;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill10{
+	fill: #663399;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill11{
+	fill: #339900;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill12{
+	fill: #9966FF;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+/* default line styles */
+.key1,.dataPoint1{
+	fill: #ff0000;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key2,.dataPoint2{
+	fill: #0000ff;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key3,.dataPoint3{
+	fill: #00ff00;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key4,.dataPoint4{
+	fill: #ffcc00;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key5,.dataPoint5{
+	fill: #00ccff;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key6,.dataPoint6{
+	fill: #ff00ff;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key7,.dataPoint7{
+	fill: #00ffff;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key8,.dataPoint8{
+	fill: #ffff00;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key9,.dataPoint9{
+	fill: #cc6666;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key10,.dataPoint10{
+	fill: #663399;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key11,.dataPoint11{
+	fill: #339900;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key12,.dataPoint12{
+	fill: #9966FF;
+	stroke: none;
+	stroke-width: 1px;	
+}
+
+
+.keyText{
+  fill: #000000;
+  text-anchor:start;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+/* End copy for external style sheet */
+]]></style>
+  </defs>
+    <!-- include default stylesheet if none specified -->
+    <!--SVG Background-->
+  <rect x='0' class='svgBackground' y='0' height='300' width='500'/>
+  <g transform='translate( 35.8 10 )'>
+    <rect x='0' class='graphBackground' y='0' height='254.2' width='273.2'/>
+    <path class='axis' d='M 0 0 v254.2' id='xAxis'/>
+    <path class='axis' d='M 0 254.2 h273.2' id='yAxis'/>
+    <text transform='rotate( 90 0.0 257.2 ) translate( 0 -3 )' x='0.0' class='xAxisLabels' y='269.2' style='text-anchor: start'>0</text>
+    <text transform='rotate( 90 26.1075300109131 257.2 ) translate( 0 -3 )' x='26.1075300109131' class='xAxisLabels' y='269.2' style='text-anchor: start'>288</text>
+    <text transform='rotate( 90 52.2150600218261 257.2 ) translate( 0 -3 )' x='52.2150600218261' class='xAxisLabels' y='269.2' style='text-anchor: start'>576</text>
+    <text transform='rotate( 90 78.3225900327392 257.2 ) translate( 0 -3 )' x='78.3225900327392' class='xAxisLabels' y='269.2' style='text-anchor: start'>864</text>
+    <text transform='rotate( 90 104.430120043652 257.2 ) translate( 0 -3 )' x='104.430120043652' class='xAxisLabels' y='269.2' style='text-anchor: start'>1152</text>
+    <text transform='rotate( 90 130.537650054565 257.2 ) translate( 0 -3 )' x='130.537650054565' class='xAxisLabels' y='269.2' style='text-anchor: start'>1440</text>
+    <text transform='rotate( 90 156.645180065478 257.2 ) translate( 0 -3 )' x='156.645180065478' class='xAxisLabels' y='269.2' style='text-anchor: start'>1728</text>
+    <text transform='rotate( 90 182.752710076391 257.2 ) translate( 0 -3 )' x='182.752710076391' class='xAxisLabels' y='269.2' style='text-anchor: start'>2016</text>
+    <text transform='rotate( 90 208.860240087304 257.2 ) translate( 0 -3 )' x='208.860240087304' class='xAxisLabels' y='269.2' style='text-anchor: start'>2304</text>
+    <text transform='rotate( 90 234.967770098217 257.2 ) translate( 0 -3 )' x='234.967770098217' class='xAxisLabels' y='269.2' style='text-anchor: start'>2592</text>
+    <text x='-3' class='yAxisLabels' y='258.2' style='text-anchor: end'>0</text>
+    <text x='-3' class='yAxisLabels' y='234.029' style='text-anchor: end'>525</text>
+    <path class='guideLines' d='M0 230.029 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='209.858' style='text-anchor: end'>1050</text>
+    <path class='guideLines' d='M0 205.858 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='185.687' style='text-anchor: end'>1575</text>
+    <path class='guideLines' d='M0 181.687 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='161.516' style='text-anchor: end'>2100</text>
+    <path class='guideLines' d='M0 157.516 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='137.345' style='text-anchor: end'>2625</text>
+    <path class='guideLines' d='M0 133.345 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='113.174' style='text-anchor: end'>3150</text>
+    <path class='guideLines' d='M0 109.174 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='89.003' style='text-anchor: end'>3675</text>
+    <path class='guideLines' d='M0 85.003 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='64.832' style='text-anchor: end'>4200</text>
+    <path class='guideLines' d='M0 60.832 h273.2'/>
+    <text x='-3' class='yAxisLabels' y='40.661' style='text-anchor: end'>4725</text>
+    <path class='guideLines' d='M0 36.661 h273.2'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='250.37868' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='250.60888' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.68068' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.75988' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.85196' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.02324' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.2074' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.25344' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='0.0'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.29948' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.63464' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='250.93116' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.71384' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.85196' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.2074' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='250.0564' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='250.83908' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.03612' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.48364' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='248.9054' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.0906511458712259'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.03612' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.63464' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='246.143' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.22028' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='251.2074' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='251.39156' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='248.9054' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.68068' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.181302291742452'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='251.16136' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='251.02324' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='245.17616' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.63464' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.68068' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.08216' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='250.0564' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.271953437613678'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='250.88512' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='249.8262' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.34552' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='250.0564' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.29948' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.62176' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.6678' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.22028' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='252.63464' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.362604583484904'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.22028' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='251.75988' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='250.01036' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='247.38608' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.45325572935613'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.34552' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='206.22632' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='252.22028' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='250.42472' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.80592' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.75988' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='250.79304' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.6678' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='249.50392' class='dataPoint1' r='2.5' cx='0.543906875227355'/>
+    <circle cy='251.62176' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='250.01036' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='250.79304' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='247.57024' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='247.84648' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='251.16136' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='248.6752' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='252.08216' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.634558021098581'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='251.6678' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.22028' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='250.47076' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='251.48364' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.725209166969807'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='250.60888' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.75988' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.08216' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.57572' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.31236' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.06928' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='250.79304' class='dataPoint1' r='2.5' cx='0.815860312841033'/>
+    <circle cy='251.80592' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='251.62176' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='245.82072' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='250.70096' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='250.88512' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='251.34552' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='250.2866' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.906511458712259'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='246.74152' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='249.1356' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='250.10244' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='250.65492' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='249.68808' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.86484' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.69356' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='250.93116' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='250.747' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='250.70096' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='0.997162604583485'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='24.0' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='252.31236' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='248.6752' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.62176' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='249.73412' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.80592' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='252.03612' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.75988' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='1.08781375045471'/>
+    <circle cy='247.34004' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='250.5168' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='250.88512' class='dataPoint1' r='2.5' cx='1.17846489632594'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='251.2074' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='250.19452' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='252.77276' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='254.01584' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='252.49652' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='1.26911604219716'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='249.78016' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='251.48364' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='246.69548' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='250.2866' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='251.52968' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='250.93116' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='246.46528' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='1.35976718806839'/>
+    <circle cy='250.2866' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='252.08216' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='251.6678' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='249.64204' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='248.12272' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='1.45041833393961'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='251.06928' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.40444' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='248.9054' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='248.6752' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='250.47076' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='251.39156' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.31236' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='253.14108' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.68068' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.54106947981084'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.9698' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='250.42472' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='249.91828' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.7396' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.63172062568207'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='248.35292' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='250.0564' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='253.55544' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='231.08792' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='1.72237177155329'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='253.46336' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='247.93856' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='250.93116' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='250.19452' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='250.5168' class='dataPoint1' r='2.5' cx='1.81302291742452'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='249.1356' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='251.80592' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='251.11532' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='248.6752' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='1.90367406329574'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='252.03612' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='252.91088' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='253.23316' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='253.2792' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='252.95692' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='248.76728' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='251.34552' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='1.99432520916697'/>
+    <circle cy='250.37868' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='251.6678' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='251.52968' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='253.41732' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='251.85196' class='dataPoint1' r='2.5' cx='2.0849763550382'/>
+    <circle cy='254.06188' class='dataPoint1' r='2.5' cx='2.17562750090942'/>
+    <circle cy='248.445' class='dataPoint1' r='2.5' cx='2.17562750090942'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.17562750090942'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='2.17562750090942'/>
+    <circle cy='251.52968' class='dataPoint1' r='2.5' cx='2.17562750090942'/>
+    <circle cy='249.22768' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='250.70096' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='252.03612' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='2.26627864678065'/>
+    <circle cy='251.94404' class='dataPoint1' r='2.5' cx='2.35692979265187'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.35692979265187'/>
+    <circle cy='253.83168' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='252.3584' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='248.76728' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='251.29948' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.4475809385231'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='2.53823208439433'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='2.53823208439433'/>
+    <circle cy='242.69' class='dataPoint1' r='2.5' cx='2.53823208439433'/>
+    <circle cy='233.482' class='dataPoint1' r='2.5' cx='2.53823208439433'/>
+    <circle cy='248.2148' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='249.22768' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='2.62888323026555'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='252.45048' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='246.3732' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='252.54256' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='2.71953437613678'/>
+    <circle cy='250.70096' class='dataPoint1' r='2.5' cx='2.810185522008'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='2.810185522008'/>
+    <circle cy='253.32524' class='dataPoint1' r='2.5' cx='2.810185522008'/>
+    <circle cy='252.1282' class='dataPoint1' r='2.5' cx='2.810185522008'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='2.810185522008'/>
+    <circle cy='242.59792' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='252.17424' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='253.37128' class='dataPoint1' r='2.5' cx='2.90083666787923'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='3.08213895962168'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='3.08213895962168'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='3.08213895962168'/>
+    <circle cy='246.87964' class='dataPoint1' r='2.5' cx='3.08213895962168'/>
+    <circle cy='254.15396' class='dataPoint1' r='2.5' cx='3.08213895962168'/>
+    <circle cy='253.049' class='dataPoint1' r='2.5' cx='3.17279010549291'/>
+    <circle cy='253.92376' class='dataPoint1' r='2.5' cx='3.17279010549291'/>
+    <circle cy='247.84648' class='dataPoint1' r='2.5' cx='3.17279010549291'/>
+    <circle cy='253.87772' class='dataPoint1' r='2.5' cx='3.26344125136413'/>
+    <circle cy='249.8262' class='dataPoint1' r='2.5' cx='3.26344125136413'/>
+    <circle cy='252.26632' class='dataPoint1' r='2.5' cx='3.26344125136413'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='3.26344125136413'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='3.44474354310658'/>
+    <circle cy='250.33264' class='dataPoint1' r='2.5' cx='3.44474354310658'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='3.44474354310658'/>
+    <circle cy='254.10792' class='dataPoint1' r='2.5' cx='3.53539468897781'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='3.53539468897781'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='3.53539468897781'/>
+    <circle cy='248.58312' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='247.7544' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='245.9128' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='253.18712' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='242.69' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='252.8188' class='dataPoint1' r='2.5' cx='3.62604583484904'/>
+    <circle cy='251.34552' class='dataPoint1' r='2.5' cx='3.80734812659149'/>
+    <circle cy='250.2866' class='dataPoint1' r='2.5' cx='3.89799927246271'/>
+    <circle cy='250.88512' class='dataPoint1' r='2.5' cx='3.89799927246271'/>
+    <circle cy='250.83908' class='dataPoint1' r='2.5' cx='3.89799927246271'/>
+    <circle cy='250.42472' class='dataPoint1' r='2.5' cx='3.89799927246271'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='3.89799927246271'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='3.98865041833394'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='4.07930156420517'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='4.07930156420517'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='4.07930156420517'/>
+    <circle cy='251.71384' class='dataPoint1' r='2.5' cx='4.16995271007639'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='4.16995271007639'/>
+    <circle cy='246.6034' class='dataPoint1' r='2.5' cx='4.16995271007639'/>
+    <circle cy='251.898' class='dataPoint1' r='2.5' cx='4.26060385594762'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='4.26060385594762'/>
+    <circle cy='248.95144' class='dataPoint1' r='2.5' cx='4.26060385594762'/>
+    <circle cy='248.2148' class='dataPoint1' r='2.5' cx='4.26060385594762'/>
+    <circle cy='250.747' class='dataPoint1' r='2.5' cx='4.53255729356129'/>
+    <circle cy='250.01036' class='dataPoint1' r='2.5' cx='4.53255729356129'/>
+    <circle cy='249.1356' class='dataPoint1' r='2.5' cx='4.71385958530375'/>
+    <circle cy='249.91828' class='dataPoint1' r='2.5' cx='4.71385958530375'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='4.71385958530375'/>
+    <circle cy='250.88512' class='dataPoint1' r='2.5' cx='4.71385958530375'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='4.80451073117497'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='4.80451073117497'/>
+    <circle cy='251.11532' class='dataPoint1' r='2.5' cx='4.98581302291742'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='5.07646416878865'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='5.2577664605311'/>
+    <circle cy='253.5094' class='dataPoint1' r='2.5' cx='5.34841760640233'/>
+    <circle cy='249.1356' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='249.54996' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='253.00296' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='5.43906875227355'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='5.52971989814478'/>
+    <circle cy='249.596' class='dataPoint1' r='2.5' cx='5.71102218988723'/>
+    <circle cy='248.6752' class='dataPoint1' r='2.5' cx='5.71102218988723'/>
+    <circle cy='247.9846' class='dataPoint1' r='2.5' cx='5.80167333575846'/>
+    <circle cy='239.4672' class='dataPoint1' r='2.5' cx='5.89232448162968'/>
+    <circle cy='252.72672' class='dataPoint1' r='2.5' cx='6.25492906511459'/>
+    <circle cy='251.62176' class='dataPoint1' r='2.5' cx='6.34558021098581'/>
+    <circle cy='252.5886' class='dataPoint1' r='2.5' cx='6.43623135685704'/>
+    <circle cy='242.69' class='dataPoint1' r='2.5' cx='6.52688250272826'/>
+    <circle cy='241.3088' class='dataPoint1' r='2.5' cx='6.52688250272826'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='6.61753364859949'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='6.61753364859949'/>
+    <circle cy='253.09504' class='dataPoint1' r='2.5' cx='6.70818479447072'/>
+    <circle cy='250.5168' class='dataPoint1' r='2.5' cx='6.98013823208439'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='7.25209166969807'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='7.43339396144052'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='7.52404510731175'/>
+    <circle cy='243.74892' class='dataPoint1' r='2.5' cx='7.97730083666788'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='7.97730083666788'/>
+    <circle cy='246.64944' class='dataPoint1' r='2.5' cx='8.15860312841033'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='8.61185885776646'/>
+    <circle cy='243.33456' class='dataPoint1' r='2.5' cx='8.70251000363769'/>
+    <circle cy='189.744' class='dataPoint1' r='2.5' cx='8.70251000363769'/>
+    <circle cy='244.992' class='dataPoint1' r='2.5' cx='8.88381229538014'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='9.06511458712259'/>
+    <circle cy='203.556' class='dataPoint1' r='2.5' cx='9.06511458712259'/>
+    <circle cy='247.294' class='dataPoint1' r='2.5' cx='9.24641687886504'/>
+    <circle cy='250.9772' class='dataPoint1' r='2.5' cx='9.33706802473627'/>
+    <circle cy='243.47268' class='dataPoint1' r='2.5' cx='9.60902146234995'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='10.424881775191'/>
+    <circle cy='244.02516' class='dataPoint1' r='2.5' cx='10.6061840669334'/>
+    <circle cy='253.78564' class='dataPoint1' r='2.5' cx='10.6968352128047'/>
+    <circle cy='253.60148' class='dataPoint1' r='2.5' cx='10.9687886504183'/>
+    <circle cy='247.7544' class='dataPoint1' r='2.5' cx='11.3313932339032'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='11.4220443797745'/>
+    <circle cy='251.99008' class='dataPoint1' r='2.5' cx='11.5126955256457'/>
+    <circle cy='228.4176' class='dataPoint1' r='2.5' cx='14.3228810476537'/>
+    <circle cy='224.274' class='dataPoint1' r='2.5' cx='14.6854856311386'/>
+    <circle cy='231.18' class='dataPoint1' r='2.5' cx='15.229392506366'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='15.5013459439796'/>
+    <circle cy='250.70096' class='dataPoint1' r='2.5' cx='17.1330665696617'/>
+    <circle cy='226.576' class='dataPoint1' r='2.5' cx='17.3143688614041'/>
+    <circle cy='240.388' class='dataPoint1' r='2.5' cx='18.3115314659876'/>
+    <circle cy='24.0' class='dataPoint1' r='2.5' cx='19.3086940705711'/>
+    <circle cy='251.4376' class='dataPoint1' r='2.5' cx='21.665623863223'/>
+    <circle cy='250.47076' class='dataPoint1' r='2.5' cx='21.8469261549654'/>
+    <circle cy='246.6034' class='dataPoint1' r='2.5' cx='22.8440887595489'/>
+    <circle cy='253.64752' class='dataPoint1' r='2.5' cx='24.475809385231'/>
+    <circle cy='198.952' class='dataPoint1' r='2.5' cx='28.7364132411786'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='29.8242269916333'/>
+    <circle cy='220.72892' class='dataPoint1' r='2.5' cx='30.0055292833758'/>
+    <circle cy='254.2' class='dataPoint1' r='2.5' cx='36.2604583484904'/>
+    <circle cy='150.10356' class='dataPoint1' r='2.5' cx='249.2'/>
+    <g/>
+  </g>
+  <g transform='translate(319.0 30)'>
+    <rect x='0' class='key1' y='0' height='12' width='12'/>
+    <text x='17' class='keyText' y='12'>Fatalities (x) Injuries (y)</text>
+  </g>
+</svg>

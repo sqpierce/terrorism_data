@@ -1,0 +1,54 @@
+<% total = 0; @results.values.map {|x| total+=x['total']} %>
+<p>Mean <b><%= @int_var %></b> by <b><%= @cat_var %></b>, Total <%= total.to_i %>, Proportion of Shared Variance: <%= number_with_precision( @eta_squared, precision=3 ) %></p>
+<p><%= image_tag @image_path %></p>
+<hr/>
+<table border="1" cellpadding="5">
+  <tr>
+    <th></th>
+    <th>n</th>
+    <th>Mean</th>
+    <th>Variance</th>
+    <th>Std. Dev.</th>
+    <th>Median</th>
+  </tr>
+  <% for k in @results.keys.sort %>
+  <tr>
+    <th align="left"><%= k %></th>
+    <td valign="top">
+      <%= @results[k]['total'].to_i %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @results[k]['mean'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @results[k]['variance'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @results[k]['standard_deviation'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @results[k]['median'], precision=2 ) %>
+    </td>
+  </tr>
+  <% end %>
+  <tr>
+    <th align="left">Totals</th>
+    <td valign="top">
+      <%= @totals['total'].to_i %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @totals['mean'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @totals['variance'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @totals['standard_deviation'], precision=2 ) %>
+    </td>
+    <td valign="top">
+      <%= number_with_precision( @totals['median'], precision=2 ) %>
+    </td>
+  </tr>
+</table>
+
+

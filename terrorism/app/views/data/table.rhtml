@@ -1,0 +1,70 @@
+<%
+
+@results.keys.map do |x|
+  @results[x].delete('Unknown')
+end
+@results.delete('Unknown')
+@f2_keys.delete_if{ |x| x == 'Unknown' }
+@row_totals = {}
+@column_totals = {}
+@N = 0
+@results.keys.map do |x|
+  @results[x].keys.map do |y|
+    @row_totals.has_key?(x) ? @row_totals[x] += @results[x][y] : @row_totals[x] = @results[x][y]
+    @column_totals.has_key?(y) ? @column_totals[y] += @results[x][y] : @column_totals[y] = @results[x][y]
+    @N += @results[x][y]
+  end
+end
+
+# loop through again to get chi squared
+@chi_sq = 0.0
+@results.keys.map do |x|
+  @results[x].keys.map do |y|
+    @observed_value = @results[x][y]
+    row_total = @row_totals[x]
+    col_total = @column_totals[y]
+    @expected_value = (row_total.to_f * col_total.to_f) / @N
+    @O_minus_E = @observed_value.to_f - @expected_value.to_f
+    @chi_sq += ( @O_minus_E**2.0 / @expected_value.to_f ) if @expected_value != 0
+  end
+end
+
+@L = @row_totals.size > @column_totals.size ? @column_totals.size : @row_totals.size
+@cramers_v_sq = @chi_sq / (@N*(@L-1))
+
+%>
+
+<p><b><%= @field1 %></b> and <b><%= @field2 %></b>, Proportion of Shared Variance: <%= number_with_precision( @cramers_v_sq, precision=3 ) %></p>
+<% if @f2_keys.size > 15 %><p><i>Note: only the first 15 (of <%= @f2_keys.size -%>) categories are graphed for the 2nd variable. For a complete graph, please re-order the variables or narrow your search.</i></p><% end %>
+<p><%= image_tag @image_path %></p>
+<hr/>
+<p>Vertical: <b><%= @field1 %></b> Horizontal: <b><%= @field2 %></b></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <td>Sum<br/>Row%<br/>Col%</td>
+    <% for k2 in @f2_keys.sort %>
+    <th align="left"><%= k2 %></th>
+    <% end %>
+  </tr>
+  <% for k1 in @results.keys.sort %>
+  <tr>
+    <th align="left"><%= k1 %></th>
+    <% for k2 in @f2_keys.sort %>
+    <td valign="top">
+      <% val = @results[k1].has_key?(k2) ? @results[k1][k2] : '0' %>
+      <%= val %><br/>
+      <%= display_percentage( val, @row_totals[k1] ) %><br/>
+      <%= display_percentage( val, @column_totals[k2] ) %>
+    </td>
+    <% end %>
+    <td><%= @row_totals[k1] %></td>
+  </tr>
+  <% end %>
+  <tr>
+    <td></td>
+    <% for k2 in @f2_keys.sort %>
+    <td><%= @column_totals[k2] %></td>
+    <% end %>
+    <td><%= @N %></td>
+  </tr>
+</table>

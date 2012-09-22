@@ -1,0 +1,18 @@
+<p>Summary: <b><%= @field %></b></p>
+<table border="1" cellpadding="5">
+  <tr><th align="left">Total</th></tr>
+  <tr><td>with Unknowns</td><td><%= @total_with_unknowns %></td></tr>
+  <tr><td>without Unknowns</td><td><%= @total_without_unknowns %></td><td>100%</td></tr>
+  <% for k,v in @results.sort{|x,y|x[0]<=>y[0]} %>
+  <% next if k == 'Unknown' %>
+   <tr>
+     <th align="left"><%= k %></th>
+     <td>
+      <%= v %>
+    </td>
+    <td>
+      <%= display_percentage(v, @total_without_unknowns) %>
+    </td>
+   </tr>
+  <% end %>
+</table>

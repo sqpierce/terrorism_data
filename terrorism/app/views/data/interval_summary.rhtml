@@ -1,0 +1,6 @@
+<p>Summary: <b><%= @field %></b></p>
+<table border="1" cellpadding="5">
+<% for k in %w[ mean variance standard_deviation min max median ] #lower_quartile upper_quartile ] %>
+ <tr><th align="left"><%= k %></th><td><%= number_with_precision( @results[k], precision=2 ) %></td></tr>
+<% end %>
+</table>

@@ -1,0 +1,1203 @@
+pl proc curvefit: error 2599: maxinpoints exceeded, curve truncated (see maxinpoints attribute) 
+pl proc curvefit: error 2599: maxinpoints exceeded, curve truncated (see maxinpoints attribute) 
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc curvefit: error 2599: maxinpoints exceeded, curve truncated (see maxinpoints attribute) 
+pl proc curvefit: error 2599: maxinpoints exceeded, curve truncated (see maxinpoints attribute) 
+pl proc curvefit: error 2599: maxinpoints exceeded, curve truncated (see maxinpoints attribute) 
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc categories: error 3895: cannot get categories from data field, no data has been read yet 
+pl proc areadef: error 5972: no x categories exist 
+pl proc areadef: error 10: cannot set up plotting area .. likely culprits: bad xrange or yrange, or bad area rectangle 
+pl proc categories: error 3895: cannot get categories from data field, no data has been read yet 
+pl proc areadef: error 5972: no x categories exist 
+pl proc areadef: error 10: cannot set up plotting area .. likely culprits: bad xrange or yrange, or bad area rectangle 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc areadef: error 5709: autorange: all data out of range 
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc areadef: error 2479: No such data field (@y)
+pl proc bars: error 2479: No such data field (@y)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl: error 22: Cannot open specified scriptfile (/Users/steve/projects/stocks/sw/pl240linuxi386/prefabs/stack_mor.pl)
+ploticus 2.40-Jan'08 (unix).  This build can produce: PS EPS SVG X11 GIF 
+Copyright 1998-2008 Steve Grubb, http://ploticus.sourceforge.net
+
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 12001: Color not defined (lightred)
+pl proc bars: error 12001: Color not defined (lightgreen)
+pl proc bars: error 12001: Color not defined (lightblue)
+pl proc bars: error 12001: Color not defined (lightyellow)
+pl proc legend: error 12001: Color not defined (lightred)
+pl proc legend: error 12001: Color not defined (lightgreen)
+pl proc bars: error 12001: Color not defined (lightred)
+pl proc bars: error 12001: Color not defined (lightgreen)
+pl proc bars: error 12001: Color not defined (lightblue)
+pl proc bars: error 12001: Color not defined (lightyellow)
+pl proc legend: error 12001: Color not defined (lightred)
+pl proc legend: error 12001: Color not defined (lightgreen)
+pl proc legend: error 12001: Color not defined (lightblue)
+pl proc legend: error 12001: Color not defined (lightyellow)
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 12001: Color not defined (lightred)
+pl proc bars: error 12001: Color not defined (lightgreen)
+pl proc bars: error 12001: Color not defined (lightblue)
+pl proc bars: error 12001: Color not defined (lightyellow)
+pl proc legend: error 12001: Color not defined (lightred)
+pl proc legend: error 12001: Color not defined (lightgreen)
+pl proc legend: error 12001: Color not defined (lightblue)
+pl proc legend: error 12001: Color not defined (lightyellow)
+pl proc bars: error 12001: Color not defined (lightred)
+pl proc bars: error 12001: Color not defined (lightgreen)
+pl proc bars: error 12001: Color not defined (lightblue)
+pl proc bars: error 12001: Color not defined (lightyellow)
+pl proc legend: error 12001: Color not defined (lightred)
+pl proc legend: error 12001: Color not defined (lightgreen)
+pl proc legend: error 12001: Color not defined (lightblue)
+pl proc legend: error 12001: Color not defined (lightyellow)
+pl proc bars: error 12001: Color not defined (draborange)
+pl proc bars: error 12001: Color not defined (drabpurple)
+pl proc bars: error 12001: Color not defined (drabred)
+pl proc bars: error 12001: Color not defined (drabyellow)
+pl proc legend: error 12001: Color not defined (draborange)
+pl proc legend: error 12001: Color not defined (drabpurple)
+pl proc legend: error 12001: Color not defined (drabred)
+pl proc legend: error 12001: Color not defined (drabyellow)
+pl proc bars: error 12001: Color not defined (burntorange)
+pl proc bars: error 12001: Color not defined (drabpurple)
+pl proc bars: error 12001: Color not defined (drabred)
+pl proc bars: error 12001: Color not defined (drabyellow)
+pl proc legend: error 12001: Color not defined (burntorange)
+pl proc legend: error 12001: Color not defined (drabpurple)
+pl proc legend: error 12001: Color not defined (drabred)
+pl proc legend: error 12001: Color not defined (drabyellow)
+pl proc bars: error 12001: Color not defined (burntorange)
+pl proc bars: error 12001: Color not defined (drabpurple)
+pl proc bars: error 12001: Color not defined (drabred)
+pl proc bars: error 12001: Color not defined (drabyellow)
+pl proc legend: error 12001: Color not defined (burntorange)
+pl proc legend: error 12001: Color not defined (drabpurple)
+pl proc legend: error 12001: Color not defined (drabred)
+pl proc legend: error 12001: Color not defined (drabyellow)
+pl proc bars: error 12001: Color not defined ($icolor 10 )
+pl proc bars: error 12001: Color not defined ($icolor 11 )
+pl proc legend: error 12001: Color not defined ($icolor 10 )
+pl proc legend: error 12001: Color not defined ($icolor 11 )
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12001: Color not defined ($icolor 10 )
+pl proc legend: error 12001: Color not defined ($icolor 10 )
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12001: Color not defined ($icolor 10 )
+pl proc legend: error 12001: Color not defined ($icolor 10 )
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12001: Color not defined (@color12)
+pl proc legend: error 12001: Color not defined ($icolor 10 )
+pl proc legend: error 12001: Color not defined ($icolor 11 )
+pl proc legend: error 12001: Color not defined (@color12)
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12001: Color not defined ($icolor 3 )
+pl proc legend: error 12001: Color not defined ($icolor 1 )
+pl proc legend: error 12001: Color not defined ($icolor 2 )
+pl proc legend: error 12001: Color not defined ($icolor 3 )
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 72036: out-of-bounds data access 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 52: lenfield out of range 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (13,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (14,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (15,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (16,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12008: Invalid color (gray)
+pl proc legend: error 12008: Invalid color (gray)
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (13,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (14,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (15,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (16,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12008: Invalid color (gray)
+pl proc legend: error 12008: Invalid color (gray)
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (13,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (14,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (15,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (16,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 12008: Invalid color (gray)
+pl proc legend: error 12008: Invalid color (gray)
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (13,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (14,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (15,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (9,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: No such data field (10,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (11,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (12,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (13,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (14,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: No such data field (15,)
+pl proc bars: error 2479: Warning, locfield same as lenfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 2479: Warning, lenfield same as a stackfield 
+pl proc bars: error 2479: Warning, locfield same as a stackfield 
+pl proc bars: error 52: lenfield out of range 

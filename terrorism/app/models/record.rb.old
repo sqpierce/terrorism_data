@@ -1,0 +1,207 @@
+class Record
+  
+  include Reloadable
+
+  def Record.do_query(key, options={})
+    default_options = {:categorical => false, :conditions => nil}
+    options = default_options.merge options
+
+    where_clause = options[:conditions] ? "where #{options[:conditions]}" : ""
+    if options[:categorical]
+      statement = "select distinct #{key}, count(#{key}) from records #{where_clause} group by #{key}"
+    else
+      case key
+      when String
+        statement = "select #{key} from records #{where_clause}"
+      when Array
+        statement = "select #{key.join(", ")} from records #{where_clause}"
+      end
+    end
+    RAILS_DEFAULT_LOGGER.error(statement)
+    SQLDB.execute(statement)
+  end
+  
+  def Record.do_categorical(field, conditions=nil)
+    records = Record.do_query( field, :categorical => true, :conditions => conditions )
+    hash = {}
+    total_with_unknowns = 0
+    total_without_unknowns = 0
+    records.map do |k,v|
+      v=v.to_i
+      hash[k]=v
+      if k == 'Unknown'
+        total_with_unknowns += v
+      else
+        total_with_unknowns += v
+        total_without_unknowns += v
+      end
+    end
+    [hash, total_with_unknowns, total_without_unknowns]
+  end
+  
+  def Record.do_categorical_categorical(f1, f2, num, conditions=nil)
+    records = Record.do_query( [f1,f2], :conditions => conditions )
+
+    hash = {}
+    f2_keys = []
+    records.map do |x|
+      v1 = x[0]
+      v2 = x[1]
+      f2_keys << v2
+      hash[v1] = {} if not hash.has_key? v1
+      hash[v1].has_key?(v2) ? hash[v1][v2] += 1 : hash[v1][v2] = 1
+    end
+    
+    # sort the keys and eliminate unknowns
+    f1_keys = hash.keys.sort.delete_if{ |x| x == 'Unknown' }
+    f2_keys = f2_keys.uniq.sort.delete_if{ |x| x == 'Unknown' }
+    
+    datafile = "public/images/#{num}.data"
+    f = File.open(datafile, 'w')
+    # reversed order for new version of python script
+    f2_keys.each do |k2|
+      vals = []
+      f1_keys.each do |k|
+        vals << (hash[k][k2] || '0')
+      end
+      f.puts(vals.join(','))
+    end
+    #f1_keys.each do |k|
+    #  vals = []
+    #  f2_keys.each do |k2|
+    #    vals << (hash[k][k2] || '0')
+    #  end
+    #  f.puts(vals.join(','))
+    #end
+    f.close()
+    unless system( 'python', 'script/barchart.py', datafile, f1_keys.join(','), f2_keys.join(',') )
+      return nil
+    end
+    [hash, f2_keys]
+  end
+
+  def Record.do_interval(field, conditions=nil)
+    vals = Record.get_interval_vals(field, conditions)
+    Record.do_stats(vals)
+  end
+  
+  def Record.sum(vals)
+    total=0
+    vals.map{ |x| total+= x }
+    total
+  end
+  
+  def Record.get_interval_vals(field, conditions=nil)
+    case field
+    when String
+      conditions = conditions ? conditions << " AND #{field} != 'Unknown' " : " #{field} != 'Unknown' "
+    when Array
+      my_conditions = ''
+      first = true
+      field.each do |f|
+        first ? my_conditions << " #{f} != 'Unknown' " : my_conditions << " AND #{f} != 'Unknown' "
+        first = false
+      end
+      conditions = conditions ? conditions << " AND #{my_conditions} " : my_conditions
+    end
+    #RAILS_DEFAULT_LOGGER.error(conditions)
+    vals = Record.do_query(field, :conditions => conditions).map{ |x| x[0].to_f }
+  end
+
+  def Record.do_stats(vals)
+    #total = Record.sum(vals)
+    total = vals.size # total is number of cases
+    vec = Vector.alloc(vals)
+    sorted_vec = vec.sort
+    h = { 
+      'mean' => GSL::Stats::mean(vec),
+      'standard_deviation' => GSL::Stats::sd(vec),
+      'variance' => GSL::Stats::variance(vec),
+      'min' => GSL::Stats::min(vec),
+      'max' => GSL::Stats::max(vec),
+      'median' => GSL::Stats::median_from_sorted_data(sorted_vec),
+      'upper_quartile' => sorted_vec.quantile_from_sorted_data(0.75),
+      'lower_quartile' => sorted_vec.quantile_from_sorted_data(0.25),
+      'total' => total
+    }
+  end
+
+  def Record.do_interval_interval(f1, f2, num, conditions=nil)
+    conditions = conditions ? conditions << " AND #{f1} != 'Unknown' AND #{f2} != 'Unknown' " : "#{f1} != 'Unknown' AND #{f2} != 'Unknown' "
+    records = Record.do_query( [f1,f2], :conditions => conditions )
+
+    datafile = "public/images/#{num}.data"
+    f = File.open(datafile, 'w')
+    
+    # leave out filter with linear regression, as it skews line
+    #unique = {}
+    vals1 = []
+    vals2 = []
+    records.each do |r|
+      vals1 << r[0].to_f
+      vals2 << r[1].to_f
+      #next if unique.has_key? r
+      f.puts("#{r[0]},#{r[1]}")
+      #unique[r] = 1
+    end
+
+    f.close()
+
+    unless system( 'python', 'script/scatter.py', datafile, f1, f2 )
+      return nil
+    end
+    
+    h1=Record.do_stats(vals1)
+    h2=Record.do_stats(vals2)
+    vec1 = Vector.alloc(vals1)
+    vec2 = Vector.alloc(vals2)
+    cov = GSL::Stats::covariance(vec1, vec2)
+    hash={
+      'covariance' => cov,
+      'correlation' => cov / (h1['standard_deviation'] * h2['standard_deviation']),
+    }
+    hash['eta_squared'] = hash['correlation']*hash['correlation']
+    hash
+  end
+  
+  def Record.do_categorical_interval(cat_var, int_var, num, conditions=nil)
+    conditions = conditions ? conditions << " AND #{cat_var} != 'Unknown' AND #{int_var} != 'Unknown' " : "#{cat_var} != 'Unknown' AND #{int_var} != 'Unknown' "
+    records = Record.do_query( [cat_var,int_var], :conditions => conditions )
+    #RAILS_DEFAULT_LOGGER.error("num records #{records.size}")
+    
+    # first get our numbers together
+    tmp_hash={}
+    records.map{ |x| k=x[0]; tmp_hash.has_key?(k) ? tmp_hash[k] << x[1].to_f : tmp_hash[k] = [x[1].to_f] }
+    
+    # then, do the stats per set
+    hash = {}
+    tmp_hash.map{ |k,v| hash[k] = Record.do_stats(v) }
+    # then get our totals for calculating eta squared
+    totals = Record.do_stats(records.map{ |x| x[1].to_f })
+    
+    # calculate eta squared
+    group_sum_of_squares = hash.values.map{ |x| x['variance'].to_f*(x['total'].to_f-1.0) }
+    numerator = Record.sum(group_sum_of_squares)
+    denominator = totals['variance'].to_f*(totals['total'].to_f-1.0)
+    eta_squared = 1.0 - (numerator / denominator)
+
+    datafile = "public/images/#{num}.data"
+    f = File.open(datafile, 'w')
+
+    cat_keys = hash.keys.sort
+
+    cat_keys.each do |k|
+      f.puts("#{hash[k]['mean']},#{hash[k]['standard_deviation']}")
+    end
+
+    f.close()
+
+    unless system( 'python', 'script/barchart2.py', datafile, int_var, cat_var, cat_keys.join(',') )
+      return nil
+    end
+
+    [hash, totals, eta_squared]
+  end
+  
+end
+

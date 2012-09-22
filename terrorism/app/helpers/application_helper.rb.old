@@ -1,0 +1,24 @@
+# Methods added to this helper will be available to all templates in the application.
+module ApplicationHelper
+  
+  def display_percentage(val, total)
+    percentage = (val.to_f/total.to_f)*100.0
+    number_to_percentage( percentage, { :precision => 2 } )
+  end
+  
+  def display_conditions
+    return "<p>None</p>" unless @conditions
+    escape_javascript(
+      """
+<!-- problem here is with new form tag style... this is a bit too reflexive -->
+      <p>
+      #{form_remote_tag :complete=>'eval(request.responseText)', :url=>{ :action=>:clear_conditions } do }
+      #{@conditions_display}
+      #{submit_tag 'Clear Conditions'}
+      #{end}
+      </p>
+      """
+      )
+  end
+  
+end

@@ -1,0 +1,325 @@
+.ig >>
+<STYLE TYPE="text/css">
+<!--
+        A:link{text-decoration:none}
+        A:visited{text-decoration:none}
+        A:active{text-decoration:none}
+        OL,UL,P,BODY,TD,TR,TH,FORM { font-family: arial,helvetica,sans-serif;; font-size:small; color: #333333; }
+
+        H1 { font-size: x-large; font-family: arial,helvetica,sans-serif; }
+        H2 { font-size: large; font-family: arial,helvetica,sans-serif; }
+        H3 { font-size: medium; font-family: arial,helvetica,sans-serif; }
+        H4 { font-size: small; font-family: arial,helvetica,sans-serif; }
+-->
+</STYLE>
+<title>ploticus: libploticus api</title>
+<body bgcolor=D0D0EE vlink=0000FF>
+<br>
+<br>
+<center>
+<table cellpadding=2 bgcolor=FFFFFF width=550><tr>
+<td>
+  <table cellpadding=2 width=550><tr>
+  <td><br><h2>libploticus API</h2></td>
+  <td align=right>
+  <small>
+  <a href="../doc/welcome.html"><img src="../doc/ploticus.gif" border=0></a><br>
+  Version 2.40 Jan'08
+  <td></tr></table>
+</td></tr>
+<td>
+<br>
+<br>
+.>>
+
+.TH libploticus_API PL "15-JAN-2008   PL ploticus.sourceforge.net"
+
+.LP
+This simple C language API 
+has all of the funcionality of the
+.ig >>
+<a href="pl.1.html">
+.>>
+\0pl program
+.ig >>
+</a>
+.>>
+and is similarly covered by the General Public License.
+.LP
+\fBlibploticus\fR is built using \fCMakefile_api\fR.
+.LP
+.nf
+ \0 make clean
+ \0 make -f Makefile_api
+.fi
+.LP
+Applications linking to \fBlibploticus\fR may need additional libraries
+such as \fCzlib\fR, but this depends on exactly how \fBlibploticus\fR was built.  
+The specifics are noted in \fCMakefile_api\fR.
+The externally visible symbols in \fBlibploticus\fR begin with these prefixes: \fCploticus\fR,
+\fCPL\fR, \fCTDH\fR, \fCDT\fR, and \fCGL\fR.
+.LP
+No header file is required.
+.LP
+All functions return 0 when successful, or a non-zero error code.
+.LP
+As of version 2.11 multiple sequential plot "jobs" can be performed by a single OS process.
+Each plot job should begin with a \fCploticus_init()\fR call and terminate with a
+\fCploticus_end()\fR call.  
+.LP
+No attempt has been made to write libploticus as thread-safe.
+.LP
+As of version 2.40 script lines can no longer be passed as string constants.  
+
+
+
+.ig >>
+<br><br><br>
+.>>
+.SH Examples
+Here's a simple example (it may be found in \fC./pltestsuite/api_examp.c\fR)
+.nf
+ \0 main()
+ \0 {
+ \0 int stat;
+ \0 char sln[80];
+ \0 stat = ploticus_init( "png", "hello.png" );
+ \0 stat += ploticus_arg( "-scale", "0.8" );
+ \0 if( stat != 0 ) { 
+ \0	printf( "error in pl setup\\n" ); 
+ \0     exit(1); 
+ \0     }
+ \0 strcpy( sln, "#proc annotate" ); ploticus_execline( sln );
+ \0 strcpy( sln, "location: 2 2" ); ploticus_execline( sln );
+ \0 strcpy( sln, "text: hello" ); ploticus_execline( sln );
+ \0 strcpy( sln, " world." ); ploticus_execline( sln );
+ \0 ploticus_end();
+ \0 }
+.fi
+
+.ig >>
+<br><br>
+.>>
+
+.SH Multi-job example
+Another included example, which invokes a series of 25+ plot jobs, is in \fC./src/api_test.c
+To build:
+.LP
+.nf
+ \0 make clean
+ \0 make -f Makefile_api
+ \0 make api_test -f Makefile_api
+.fi
+Then, go to the \fCpltestsuite\fR directory and type: \fC../src/api_test\fR
+
+.ig >>
+<br><br><br>
+.>>
+
+.SH libploticus API
+
+.LP
+\fCploticus_init( char *device, char *outfilename )\fR
+.IP \0
+Initialize, read your 
+.ig >>
+<a href="config.html">
+.>>
+\0ploticus config file
+.ig >>
+</a>
+.>>
+if any, and set the output \fCdevice\fR to one of 
+\fCpng\fR, \fCgif\fR, \fCx11\fR, \fCsvg\fR, \fCjpeg\fR, \fCeps\fR, or \fCswf\fR.
+(Not all devices may be available, depending on the build.)
+\fCoutfilename\fR is the pathname of the file where the
+result will be written.  
+Example: 
+.nf
+ \0 stat = ploticus_init( "png", "bargraph.png" );
+ \0 if( stat != 0 ) \fIerror\fR
+.fi
+
+.ig >>
+<br><br><br>
+.>>
+
+.LP
+\fCploticus_arg( name, value )\fR
+.IP \0
+Specify a 
+.ig >>
+<a href="pl.1.html#options">
+.>>
+\0pl command line argument.
+.ig >>
+</a>
+.>>
+\fCname\fR specifies the argument name and \fCvalue\fR an argument value.
+If there is no argument value, \fCvalue\fR should be passed as \fC""\fR.
+All arguments are supported except \fC-f\fR, \fC-prefab\fR, and \fC-ver\fR.
+If needed, this function should be called after \fCploticus_init()\fR
+but before any other ploticus function.
+It may be called as many times as necessary.
+Example: 
+.nf
+  \0 stat = ploticus_arg( "-debug", "" );
+  \0 stat += ploticus_arg( "-diagfile", "stdout" );
+  \0 stat += ploticus_arg( "-scale", "0.8" );
+  \0 if( stat != 0 ) \fIerror\fR
+.fi
+
+.ig >>
+<br><br>
+.>>
+
+.LP
+\fCploticus_begin( )\fR
+.IP \0
+This function is no longer necessary.  Old code that uses it will still be OK.
+
+.ig >>
+<br><br><br>
+.>>
+
+.LP
+\fCploticus_execline( char *line )\fR
+.IP \0
+Interpret one "raw" 
+.ig >>
+<a href="scripts.html">
+.>>
+\0ploticus script
+.ig >>
+</a>
+.>>
+line.  
+Typically called multiple times, allowing ploticus scripts to be 
+generated programatically.  Script lines can contain only these directives: \fC #proc\fR, \fC #procdef\fR, 
+\fC #endproc\fR, \fC #clone\fR and \fC #saveas\fR.  
+You can't use set, if/else, loops, or other flow-of-control 
+directives (but these types of things can be handled by your host application).
+Further, these script lines do not undergo a variable-evaluation pass, so
+variables cannot be referenced, and \fCselect\fR statements (etc.) that reference data field names should
+use one at sign (@) instead of two (@@).  If your program needs to access a variable that has been set
+by the ploticus engine, use \fCploticus_getvar()\fR, described below.
+The script line may include a trailing newline or not.
+.IP
+An alternative is to use \fCploticus_execscript()\fR (described below)
+to execute an entire script file.
+You can't use both \fCploticus_execline()\fR and \fCploticus_execscript()\fR in the same application.
+.IP
+\fBCaution\fR As of ploticus version 2.40 string constants cannot be passed in this function.  See the example
+in the page intro above.
+
+.ig >>
+<br><br><br>
+.>>
+
+.LP
+\fCploticus_execscript( char *scriptfile, int prefabflag )\fR
+.IP \0
+Interpret an entire 
+.ig >>
+<a href="scripts.html">
+.>>
+\0ploticus script file
+.ig >>
+</a>
+.>>
+or 
+.ig >>
+<a href="prefabs.html">
+.>>
+\0prefab.
+.ig >>
+</a>
+.>>
+\fCscriptfile\fR is the name of the ploticus script file.  There are no
+syntax limitations as with \fCploticus_execline()\fR.
+\fCprefabflag\fR is \fC1\fR, then \fCscriptfile\fR is taken to be a
+.ig >>
+<a href="prefabs.html">
+.>>
+\0ploticus prefab
+.ig >>
+</a>
+.>>
+name such as \fCvbars\fR.  
+If \fCprefabflag\fR is \fC0\fR, then \fCscriptfile\fR should be a pathname.
+.IP 
+An alternative is to use \fCploticus_execline()\fR (described above)
+to execute program-generated "raw" script lines one at a time.
+You can't use both \fCploticus_execscript()\fR and \fCploticus_execline()\fR in the same application.
+.IP
+Example: \fCstat = ploticus_execscript( "vbars", 1 );\fR
+.br
+Example: \fCstat = ploticus_execscript( "/home/steve/plfiles/myscript.pl", 0 );\fR
+
+.ig >>
+<br><br><br>
+.>>
+
+.LP
+\fCploticus_end()\fR
+.IP \0
+Finish up the graphic result, write it to the output file, and free up allocated memory.
+
+.ig >>
+<br><br><br>
+.>>
+.SH These functions are also available:
+
+
+.LP
+\fCploticus_getvar( char *name, char *value )\fR
+.IP \0
+Get the contents of ploticus variable \fCname\fR.
+Result is copied into \fCvalue\fR.
+.br
+Example: \fCstat = ploticus_getvar( "XFINAL", xf );\fR
+
+.ig >>
+<br><br><br>
+.>>
+.LP
+\fCploticus_setvar( char *name, char *value )\fR
+.IP \0
+Set ploticus variable \fCname\fR to \fCvalue\fR.
+
+.ig >>
+<br><br><br>
+.>>
+.LP
+\fCgdImagePtr PLGG_getimg( int *width, int *height )\fR
+.IP \0
+Returns a pointer to the working GD image, for situations
+where the host application wants to directly issue gd drawing calls.
+The \fCwidth\fR and \fCheight\fR of the working image (in pixels)
+are also provided.  Note that the result image is generally cropped
+based on the extent of ploticus drawing actions, before being written out.
+Only valid in applications built with GD,
+when ploticus was initialized with one of the GD image devices
+(eg. \fCpng\fR or \fCjpeg\fR).
+
+.ig >>
+<br>
+<br>
+</td></tr>
+<td align=right>
+<a href="../doc/welcome.html">
+<img src="../doc/ploticus.gif" border=0></a><br><small>data display engine &nbsp; <br>
+<a href="../doc/Copyright.html">Copyright Steve Grubb</a>
+<br>
+<br>
+<center>
+<img src="../gallery/all.gif"> 
+</center>
+</td></tr>
+</table>
+<br>
+<center>
+Ploticus is hosted at http://ploticus.sourceforge.net <br>
+<img src="http://sourceforge.net/sflogo.php?group_id=38453" width="88" height="31" border="0" alt="SourceForge Logo">
+</center>
+.>>

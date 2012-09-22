@@ -1,0 +1,1179 @@
+<?xml version='1.0'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 500 300' a3:scriptImplementation='Adobe' height='300' xmlns:a3='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' width='500' xmlns='http://www.w3.org/2000/svg'>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!-- Created with SVG::Graph -->
+    <!-- SVG::Graph by Sean E. Russell -->
+    <!-- Losely based on SVG::TT::Graph for Perl by Leo Lapworth & Stephan Morgan -->
+    <!-- //////////////////////////////////////////////////////////////////-->
+  <defs>
+    <style type='text/css'><![CDATA[/* Copy from here for external style sheet */
+.svgBackground{
+  fill:#ffffff;
+}
+.graphBackground{
+  fill:#f0f0f0;
+}
+
+/* graphs titles */
+.mainTitle{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+.subTitle{
+  text-anchor: middle;
+  fill: #999999;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.axis{
+  stroke: #000000;
+  stroke-width: 1px;
+}
+
+.guideLines{
+  stroke: #666666;
+  stroke-width: 1px;
+  stroke-dasharray: 5 5;
+}
+
+.xAxisLabels{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisLabels{
+  text-anchor: end;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.xAxisTitle{
+  text-anchor: middle;
+  fill: #ff0000;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisTitle{
+  fill: #ff0000;
+  text-anchor: middle;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.dataPointLabel{
+  fill: #000000;
+  text-anchor:middle;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.staggerGuideLine{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.5px;  
+}
+
+/* default fill styles for multiple datasets (probably only use a single dataset on this graph though) */
+.key1,.fill1{
+	fill: #ff0000;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 0.5px;	
+}
+.key2,.fill2{
+	fill: #0000ff;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key3,.fill3{
+	fill: #00ff00;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key4,.fill4{
+	fill: #ffcc00;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key5,.fill5{
+	fill: #00ccff;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key6,.fill6{
+	fill: #ff00ff;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key7,.fill7{
+	fill: #00ffff;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key8,.fill8{
+	fill: #ffff00;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key9,.fill9{
+	fill: #cc6666;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key10,.fill10{
+	fill: #663399;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key11,.fill11{
+	fill: #339900;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+.key12,.fill12{
+	fill: #9966FF;
+	fill-opacity: 0.5;
+	stroke: none;
+	stroke-width: 1px;	
+}
+
+
+.keyText{
+  fill: #000000;
+  text-anchor:start;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+/* End copy for external style sheet */
+]]></style>
+  </defs>
+    <!-- include default stylesheet if none specified -->
+    <!--SVG Background-->
+  <rect x='0' class='svgBackground' y='0' height='300' width='500'/>
+  <g transform='translate( 79.0 10 )'>
+    <rect x='0' class='graphBackground' y='0' height='271' width='194.0'/>
+    <path class='axis' d='M 0 0 v271' id='xAxis'/>
+    <path class='axis' d='M 0 271 h194.0' id='yAxis'/>
+    <text x='48.5' class='xAxisLabels' y='286' style='text-anchor: middle'>mean</text>
+    <text x='145.5' class='xAxisLabels' y='286' style='text-anchor: middle'>std dev</text>
+    <text x='-3' class='yAxisLabels' y='275.0' style='text-anchor: end'>0.0</text>
+    <text x='-3' class='yAxisLabels' y='250.3' style='text-anchor: end'>245.53095</text>
+    <path class='guideLines' d='M0 246.3 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='225.6' style='text-anchor: end'>491.0619</text>
+    <path class='guideLines' d='M0 221.6 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='200.9' style='text-anchor: end'>736.59285</text>
+    <path class='guideLines' d='M0 196.9 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='176.2' style='text-anchor: end'>982.1238</text>
+    <path class='guideLines' d='M0 172.2 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='151.5' style='text-anchor: end'>1227.65475</text>
+    <path class='guideLines' d='M0 147.5 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='126.8' style='text-anchor: end'>1473.1857</text>
+    <path class='guideLines' d='M0 122.8 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='102.1' style='text-anchor: end'>1718.71665</text>
+    <path class='guideLines' d='M0 98.1 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='77.4' style='text-anchor: end'>1964.2476</text>
+    <path class='guideLines' d='M0 73.4 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='52.7' style='text-anchor: end'>2209.77855</text>
+    <path class='guideLines' d='M0 48.7 h194.0'/>
+    <text x='-3' class='yAxisLabels' y='28.0' style='text-anchor: end'>2455.3095</text>
+    <path class='guideLines' d='M0 24.0 h194.0'/>
+    <rect x='0.0' class='fill1' y='270.768623874098' height='0.231376125901847' width='87.0'/>
+    <rect x='0.0' class='fill2' y='270.698205053171' height='0.301794946828496' width='87.0'/>
+    <rect x='0.0' class='fill3' y='270.887329886517' height='0.112670113482638' width='87.0'/>
+    <rect x='0.0' class='fill4' y='270.913485448576' height='0.0865145514241687' width='87.0'/>
+    <rect x='0.0' class='fill5' y='270.357176763255' height='0.642823236744696' width='87.0'/>
+    <rect x='0.0' class='fill6' y='270.942658960103' height='0.0573410398974142' width='87.0'/>
+    <rect x='0.0' class='fill7' y='270.622756316464' height='0.377243683535619' width='87.0'/>
+    <rect x='0.0' class='fill8' y='270.899401684391' height='0.100598315609499' width='87.0'/>
+    <rect x='0.0' class='fill9' y='269.249589308395' height='1.75041069160527' width='87.0'/>
+    <rect x='0.0' class='fill10' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill11' y='270.68311530583' height='0.31688469416992' width='87.0'/>
+    <rect x='0.0' class='fill12' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill13' y='270.891353819142' height='0.108646180858258' width='87.0'/>
+    <rect x='0.0' class='fill14' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill15' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill16' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill17' y='270.949700842195' height='0.0502991578047493' width='87.0'/>
+    <rect x='0.0' class='fill18' y='270.949700842195' height='0.0502991578047493' width='87.0'/>
+    <rect x='0.0' class='fill19' y='270.880288004425' height='0.119711995575303' width='87.0'/>
+    <rect x='0.0' class='fill20' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill21' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill22' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill23' y='254.099482977604' height='16.9005170223958' width='87.0'/>
+    <rect x='0.0' class='fill24' y='270.960766656912' height='0.0392333430877044' width='87.0'/>
+    <rect x='0.0' class='fill25' y='268.250648034392' height='2.74935196560759' width='87.0'/>
+    <rect x='0.0' class='fill26' y='270.886323903361' height='0.113676096638733' width='87.0'/>
+    <rect x='0.0' class='fill27' y='270.954730757976' height='0.0452692420242743' width='87.0'/>
+    <rect x='0.0' class='fill28' y='268.082648847325' height='2.91735115267546' width='87.0'/>
+    <rect x='0.0' class='fill29' y='270.899401684391' height='0.100598315609499' width='87.0'/>
+    <rect x='0.0' class='fill30' y='270.818923031903' height='0.181076968097097' width='87.0'/>
+    <rect x='0.0' class='fill31' y='270.758564042537' height='0.241435957462796' width='87.0'/>
+    <rect x='0.0' class='fill32' y='270.245512632929' height='0.754487367071239' width='87.0'/>
+    <rect x='0.0' class='fill33' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill34' y='270.956742724288' height='0.0432572757120844' width='87.0'/>
+    <rect x='0.0' class='fill35' y='270.640864013274' height='0.35913598672591' width='87.0'/>
+    <rect x='0.0' class='fill36' y='270.961772640068' height='0.0382273599316094' width='87.0'/>
+    <rect x='0.0' class='fill37' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill38' y='270.832000812932' height='0.167999187067863' width='87.0'/>
+    <rect x='0.0' class='fill39' y='270.849102526586' height='0.150897473414248' width='87.0'/>
+    <rect x='0.0' class='fill40' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill41' y='270.556361428162' height='0.443638571837889' width='87.0'/>
+    <rect x='0.0' class='fill42' y='270.757558059381' height='0.242441940618891' width='87.0'/>
+    <rect x='0.0' class='fill43' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill44' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill45' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill46' y='270.82495893084' height='0.175041069160527' width='87.0'/>
+    <rect x='0.0' class='fill47' y='270.982898286346' height='0.0171017136536148' width='87.0'/>
+    <rect x='0.0' class='fill48' y='270.817917048747' height='0.182082951253192' width='87.0'/>
+    <rect x='0.0' class='fill49' y='270.698205053171' height='0.301794946828496' width='87.0'/>
+    <rect x='0.0' class='fill50' y='269.944723669256' height='1.05527633074364' width='87.0'/>
+    <rect x='0.0' class='fill51' y='264.991262608645' height='6.00873739135535' width='87.0'/>
+    <rect x='0.0' class='fill52' y='270.206279289841' height='0.793720710158943' width='87.0'/>
+    <rect x='0.0' class='fill53' y='269.677132149735' height='1.32286785026491' width='87.0'/>
+    <rect x='0.0' class='fill54' y='270.943664943259' height='0.0563350567413192' width='87.0'/>
+    <rect x='0.0' class='fill55' y='269.49806714795' height='1.50193285204981' width='87.0'/>
+    <rect x='0.0' class='fill56' y='270.802827301405' height='0.197172698594617' width='87.0'/>
+    <rect x='0.0' class='fill57' y='270.968814522161' height='0.0311854778389445' width='87.0'/>
+    <rect x='0.0' class='fill58' y='270.547307579757' height='0.452692420242743' width='87.0'/>
+    <rect x='0.0' class='fill59' y='269.751574903286' height='1.24842509671388' width='87.0'/>
+    <rect x='0.0' class='fill60' y='100.653854228968' height='170.346145771032' width='87.0'/>
+    <rect x='0.0' class='fill61' y='269.574521867813' height='1.42547813218659' width='87.0'/>
+    <rect x='0.0' class='fill62' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill63' y='270.377296426377' height='0.622703573622796' width='87.0'/>
+    <rect x='0.0' class='fill64' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill65' y='270.899401684391' height='0.100598315609499' width='87.0'/>
+    <rect x='0.0' class='fill66' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill67' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill68' y='270.849102526586' height='0.150897473414248' width='87.0'/>
+    <rect x='0.0' class='fill69' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill70' y='270.952718791664' height='0.0472812083364643' width='87.0'/>
+    <rect x='0.0' class='fill71' y='270.932599128542' height='0.067400871458364' width='87.0'/>
+    <rect x='0.0' class='fill72' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill73' y='270.849102526586' height='0.150897473414248' width='87.0'/>
+    <rect x='0.0' class='fill74' y='270.91247946542' height='0.0875205345802637' width='87.0'/>
+    <rect x='0.0' class='fill75' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill76' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill77' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill78' y='270.809869183498' height='0.190130816501952' width='87.0'/>
+    <rect x='0.0' class='fill79' y='270.866204240239' height='0.133795759760633' width='87.0'/>
+    <rect x='0.0' class='fill80' y='270.156986115192' height='0.843013884807598' width='87.0'/>
+    <rect x='0.0' class='fill81' y='270.734420446791' height='0.265579553209076' width='87.0'/>
+    <rect x='0.0' class='fill82' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill83' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill84' y='270.890347835986' height='0.109652164014353' width='87.0'/>
+    <rect x='0.0' class='fill85' y='270.451739179928' height='0.548260820071767' width='87.0'/>
+    <rect x='0.0' class='fill86' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill87' y='270.978874353722' height='0.0211256462779947' width='87.0'/>
+    <rect x='0.0' class='fill88' y='270.97686238741' height='0.0231376125901847' width='87.0'/>
+    <rect x='0.0' class='fill89' y='269.390426950248' height='1.60957304975198' width='87.0'/>
+    <rect x='0.0' class='fill90' y='261.841529346911' height='9.15847065308875' width='87.0'/>
+    <rect x='0.0' class='fill91' y='266.752739114967' height='4.24726088503303' width='87.0'/>
+    <rect x='0.0' class='fill92' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill93' y='270.798803368781' height='0.201196631218997' width='87.0'/>
+    <rect x='0.0' class='fill94' y='270.744480278352' height='0.255519721648126' width='87.0'/>
+    <rect x='0.0' class='fill95' y='270.406469937904' height='0.593530062096041' width='87.0'/>
+    <rect x='0.0' class='fill96' y='270.195213475124' height='0.804786524875988' width='87.0'/>
+    <rect x='0.0' class='fill97' y='270.583522973377' height='0.416477026623324' width='87.0'/>
+    <rect x='0.0' class='fill98' y='270.497008421953' height='0.502991578047493' width='87.0'/>
+    <rect x='0.0' class='fill99' y='270.982898286346' height='0.0171017136536148' width='87.0'/>
+    <rect x='0.0' class='fill100' y='270.881293987581' height='0.118706012419208' width='87.0'/>
+    <rect x='0.0' class='fill101' y='268.518239553914' height='2.48176044608633' width='87.0'/>
+    <rect x='0.0' class='fill102' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill103' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill104' y='268.417641238304' height='2.58235876169583' width='87.0'/>
+    <rect x='0.0' class='fill105' y='270.654947777459' height='0.34505222254058' width='87.0'/>
+    <rect x='0.0' class='fill106' y='270.698205053171' height='0.301794946828496' width='87.0'/>
+    <rect x='0.0' class='fill107' y='270.698205053171' height='0.301794946828496' width='87.0'/>
+    <rect x='0.0' class='fill108' y='270.479906708299' height='0.520093291701107' width='87.0'/>
+    <rect x='0.0' class='fill109' y='270.0674536143' height='0.932546385700051' width='87.0'/>
+    <rect x='0.0' class='fill110' y='270.66500760902' height='0.33499239097963' width='87.0'/>
+    <rect x='0.0' class='fill111' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill112' y='270.434637466275' height='0.565362533725382' width='87.0'/>
+    <rect x='0.0' class='fill113' y='269.414570545994' height='1.5854294540057' width='87.0'/>
+    <rect x='0.0' class='fill114' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill115' y='270.899401684391' height='0.100598315609499' width='87.0'/>
+    <rect x='0.0' class='fill116' y='270.957748707444' height='0.0422512925559894' width='87.0'/>
+    <rect x='0.0' class='fill117' y='270.881293987581' height='0.118706012419208' width='87.0'/>
+    <rect x='0.0' class='fill118' y='271.0' height='0.0' width='87.0'/>
+    <rect x='0.0' class='fill119' y='270.396410106343' height='0.603589893656991' width='87.0'/>
+    <rect x='0.0' class='fill120' y='270.798803368781' height='0.201196631218997' width='87.0'/>
+    <rect x='0.0' class='fill121' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill1' y='270.34309299907' height='0.656907000930025' width='87.0'/>
+    <rect x='97.0' class='fill2' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill3' y='270.731402497323' height='0.268597502677361' width='87.0'/>
+    <rect x='97.0' class='fill4' y='270.727378564698' height='0.272621435301741' width='87.0'/>
+    <rect x='97.0' class='fill5' y='267.111875101693' height='3.88812489830712' width='87.0'/>
+    <rect x='97.0' class='fill6' y='270.927569212761' height='0.0724307872388389' width='87.0'/>
+    <rect x='97.0' class='fill7' y='270.034256170149' height='0.965743829851186' width='87.0'/>
+    <rect x='97.0' class='fill8' y='270.858156374991' height='0.141843625009393' width='87.0'/>
+    <rect x='97.0' class='fill9' y='267.604806848179' height='3.39519315182058' width='87.0'/>
+    <rect x='97.0' class='fill10' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill11' y='269.58055776675' height='1.41944223325002' width='87.0'/>
+    <rect x='97.0' class='fill12' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill13' y='270.624768282777' height='0.37523171722343' width='87.0'/>
+    <rect x='97.0' class='fill14' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill15' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill16' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill17' y='270.949700842195' height='0.0502991578047493' width='87.0'/>
+    <rect x='97.0' class='fill18' y='270.949700842195' height='0.0502991578047493' width='87.0'/>
+    <rect x='97.0' class='fill19' y='270.715306766825' height='0.284693233174881' width='87.0'/>
+    <rect x='97.0' class='fill20' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill21' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill22' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill23' y='259.732988651736' height='11.2670113482638' width='87.0'/>
+    <rect x='97.0' class='fill24' y='270.867210223395' height='0.132789776604538' width='87.0'/>
+    <rect x='97.0' class='fill25' y='267.665165837545' height='3.33483416245488' width='87.0'/>
+    <rect x='97.0' class='fill26' y='270.611690501747' height='0.388309498252664' width='87.0'/>
+    <rect x='97.0' class='fill27' y='270.856144408678' height='0.143855591321583' width='87.0'/>
+    <rect x='97.0' class='fill28' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill29' y='270.858156374991' height='0.141843625009393' width='87.0'/>
+    <rect x='97.0' class='fill30' y='270.523163984011' height='0.476836015989023' width='87.0'/>
+    <rect x='97.0' class='fill31' y='270.406469937904' height='0.593530062096041' width='87.0'/>
+    <rect x='97.0' class='fill32' y='270.245512632929' height='0.754487367071239' width='87.0'/>
+    <rect x='97.0' class='fill33' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill34' y='270.895377751766' height='0.104622248233878' width='87.0'/>
+    <rect x='97.0' class='fill35' y='270.320961369636' height='0.679038630364115' width='87.0'/>
+    <rect x='97.0' class='fill36' y='270.819929015059' height='0.180070984941002' width='87.0'/>
+    <rect x='97.0' class='fill37' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill38' y='270.444697297836' height='0.555302702164432' width='87.0'/>
+    <rect x='97.0' class='fill39' y='270.74246831204' height='0.257531687960316' width='87.0'/>
+    <rect x='97.0' class='fill40' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill41' y='268.987027704654' height='2.01297229534607' width='87.0'/>
+    <rect x='97.0' class='fill42' y='270.150950216256' height='0.849049783744168' width='87.0'/>
+    <rect x='97.0' class='fill43' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill44' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill45' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill46' y='270.005082658622' height='0.994917341377941' width='87.0'/>
+    <rect x='97.0' class='fill47' y='270.954730757976' height='0.0452692420242743' width='87.0'/>
+    <rect x='97.0' class='fill48' y='270.703234968952' height='0.296765031048021' width='87.0'/>
+    <rect x='97.0' class='fill49' y='270.698205053171' height='0.301794946828496' width='87.0'/>
+    <rect x='97.0' class='fill50' y='268.311007023758' height='2.6889929762419' width='87.0'/>
+    <rect x='97.0' class='fill51' y='261.100119760869' height='9.89988023913075' width='87.0'/>
+    <rect x='97.0' class='fill52' y='268.829088349147' height='2.17091165085298' width='87.0'/>
+    <rect x='97.0' class='fill53' y='267.785883816277' height='3.21411618372348' width='87.0'/>
+    <rect x='97.0' class='fill54' y='270.916503398044' height='0.0834966019558838' width='87.0'/>
+    <rect x='97.0' class='fill55' y='268.213426657617' height='2.78657334238311' width='87.0'/>
+    <rect x='97.0' class='fill56' y='270.075501479549' height='0.924498520451291' width='87.0'/>
+    <rect x='97.0' class='fill57' y='270.901413650703' height='0.0985863492973086' width='87.0'/>
+    <rect x='97.0' class='fill58' y='268.994069586747' height='2.0059304132534' width='87.0'/>
+    <rect x='97.0' class='fill59' y='268.687244724138' height='2.31275527586237' width='87.0'/>
+    <rect x='97.0' class='fill60' y='35.7619047619048' height='235.238095238095' width='87.0'/>
+    <rect x='97.0' class='fill61' y='268.325090787943' height='2.67490921205657' width='87.0'/>
+    <rect x='97.0' class='fill62' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill63' y='268.102768510446' height='2.89723148955356' width='87.0'/>
+    <rect x='97.0' class='fill64' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill65' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill66' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill67' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill68' y='270.849102526586' height='0.150897473414248' width='87.0'/>
+    <rect x='97.0' class='fill69' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill70' y='270.902419633859' height='0.0975803661412136' width='87.0'/>
+    <rect x='97.0' class='fill71' y='270.905437583327' height='0.0945624166729286' width='87.0'/>
+    <rect x='97.0' class='fill72' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill73' y='270.739450362571' height='0.260549637428601' width='87.0'/>
+    <rect x='97.0' class='fill74' y='270.832000812932' height='0.167999187067863' width='87.0'/>
+    <rect x='97.0' class='fill75' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill76' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill77' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill78' y='270.38936822425' height='0.610631775749656' width='87.0'/>
+    <rect x='97.0' class='fill79' y='270.875258088644' height='0.124741911355778' width='87.0'/>
+    <rect x='97.0' class='fill80' y='269.180176470624' height='1.81982352937583' width='87.0'/>
+    <rect x='97.0' class='fill81' y='270.223381003495' height='0.776618996505329' width='87.0'/>
+    <rect x='97.0' class='fill82' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill83' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill84' y='270.646899912211' height='0.35310008778934' width='87.0'/>
+    <rect x='97.0' class='fill85' y='269.579551783594' height='1.42044821640612' width='87.0'/>
+    <rect x='97.0' class='fill86' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill87' y='270.919521347512' height='0.0804786524875988' width='87.0'/>
+    <rect x='97.0' class='fill88' y='270.942658960103' height='0.0573410398974142' width='87.0'/>
+    <rect x='97.0' class='fill89' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill90' y='251.381316489836' height='19.6186835101644' width='87.0'/>
+    <rect x='97.0' class='fill91' y='259.406044126005' height='11.5939558739947' width='87.0'/>
+    <rect x='97.0' class='fill92' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill93' y='270.716312749981' height='0.283687250018786' width='87.0'/>
+    <rect x='97.0' class='fill94' y='270.286757942329' height='0.713242057671345' width='87.0'/>
+    <rect x='97.0' class='fill95' y='266.527398888002' height='4.4726011119983' width='87.0'/>
+    <rect x='97.0' class='fill96' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill97' y='270.268650245519' height='0.731349754481054' width='87.0'/>
+    <rect x='97.0' class='fill98' y='270.497008421953' height='0.502991578047493' width='87.0'/>
+    <rect x='97.0' class='fill99' y='270.962778623224' height='0.0372213767755145' width='87.0'/>
+    <rect x='97.0' class='fill100' y='270.64186999643' height='0.358130003569815' width='87.0'/>
+    <rect x='97.0' class='fill101' y='266.797002373835' height='4.20299762616485' width='87.0'/>
+    <rect x='97.0' class='fill102' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill103' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill104' y='267.349287126531' height='3.6507128734687' width='87.0'/>
+    <rect x='97.0' class='fill105' y='270.392386173719' height='0.607613826281371' width='87.0'/>
+    <rect x='97.0' class='fill106' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill107' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill108' y='270.220363054026' height='0.779636945973614' width='87.0'/>
+    <rect x='97.0' class='fill109' y='266.50727922488' height='4.4927207751202' width='87.0'/>
+    <rect x='97.0' class='fill110' y='270.749510194132' height='0.250489805867651' width='87.0'/>
+    <rect x='97.0' class='fill111' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill112' y='268.756657561908' height='2.24334243809182' width='87.0'/>
+    <rect x='97.0' class='fill113' y='254.363050564501' height='16.6369494354989' width='87.0'/>
+    <rect x='97.0' class='fill114' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill115' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill116' y='270.861174324459' height='0.138825675541108' width='87.0'/>
+    <rect x='97.0' class='fill117' y='270.506062270357' height='0.493937729642638' width='87.0'/>
+    <rect x='97.0' class='fill118' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill119' y='269.770688583252' height='1.22931141674807' width='87.0'/>
+    <rect x='97.0' class='fill120' y='271.0' height='0.0' width='87.0'/>
+    <rect x='97.0' class='fill121' y='271.0' height='0.0' width='87.0'/>
+    <g>
+      <text x='43.5' class='dataPointLabel' y='264.768623874098' style=' stroke: #fff; stroke-width: 2;'>2.3</text>
+      <text x='43.5' class='dataPointLabel' y='264.768623874098'>2.3</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171' style=' stroke: #fff; stroke-width: 2;'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.887329886517' style=' stroke: #fff; stroke-width: 2;'>1.12</text>
+      <text x='43.5' class='dataPointLabel' y='264.887329886517'>1.12</text>
+      <text x='43.5' class='dataPointLabel' y='264.913485448576' style=' stroke: #fff; stroke-width: 2;'>0.86</text>
+      <text x='43.5' class='dataPointLabel' y='264.913485448576'>0.86</text>
+      <text x='43.5' class='dataPointLabel' y='264.357176763255' style=' stroke: #fff; stroke-width: 2;'>6.39</text>
+      <text x='43.5' class='dataPointLabel' y='264.357176763255'>6.39</text>
+      <text x='43.5' class='dataPointLabel' y='264.942658960103' style=' stroke: #fff; stroke-width: 2;'>0.57</text>
+      <text x='43.5' class='dataPointLabel' y='264.942658960103'>0.57</text>
+      <text x='43.5' class='dataPointLabel' y='264.622756316464' style=' stroke: #fff; stroke-width: 2;'>3.75</text>
+      <text x='43.5' class='dataPointLabel' y='264.622756316464'>3.75</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391' style=' stroke: #fff; stroke-width: 2;'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='263.249589308395' style=' stroke: #fff; stroke-width: 2;'>17.4</text>
+      <text x='43.5' class='dataPointLabel' y='263.249589308395'>17.4</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.68311530583' style=' stroke: #fff; stroke-width: 2;'>3.15</text>
+      <text x='43.5' class='dataPointLabel' y='264.68311530583'>3.15</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.891353819142' style=' stroke: #fff; stroke-width: 2;'>1.08</text>
+      <text x='43.5' class='dataPointLabel' y='264.891353819142'>1.08</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.949700842195' style=' stroke: #fff; stroke-width: 2;'>0.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.949700842195'>0.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.949700842195' style=' stroke: #fff; stroke-width: 2;'>0.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.949700842195'>0.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.880288004425' style=' stroke: #fff; stroke-width: 2;'>1.19</text>
+      <text x='43.5' class='dataPointLabel' y='264.880288004425'>1.19</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='248.099482977604' style=' stroke: #fff; stroke-width: 2;'>168.0</text>
+      <text x='43.5' class='dataPointLabel' y='248.099482977604'>168.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.960766656912' style=' stroke: #fff; stroke-width: 2;'>0.39</text>
+      <text x='43.5' class='dataPointLabel' y='264.960766656912'>0.39</text>
+      <text x='43.5' class='dataPointLabel' y='262.250648034392' style=' stroke: #fff; stroke-width: 2;'>27.33</text>
+      <text x='43.5' class='dataPointLabel' y='262.250648034392'>27.33</text>
+      <text x='43.5' class='dataPointLabel' y='264.886323903361' style=' stroke: #fff; stroke-width: 2;'>1.13</text>
+      <text x='43.5' class='dataPointLabel' y='264.886323903361'>1.13</text>
+      <text x='43.5' class='dataPointLabel' y='264.954730757976' style=' stroke: #fff; stroke-width: 2;'>0.45</text>
+      <text x='43.5' class='dataPointLabel' y='264.954730757976'>0.45</text>
+      <text x='43.5' class='dataPointLabel' y='262.082648847325' style=' stroke: #fff; stroke-width: 2;'>29.0</text>
+      <text x='43.5' class='dataPointLabel' y='262.082648847325'>29.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391' style=' stroke: #fff; stroke-width: 2;'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.818923031903' style=' stroke: #fff; stroke-width: 2;'>1.8</text>
+      <text x='43.5' class='dataPointLabel' y='264.818923031903'>1.8</text>
+      <text x='43.5' class='dataPointLabel' y='264.758564042537' style=' stroke: #fff; stroke-width: 2;'>2.4</text>
+      <text x='43.5' class='dataPointLabel' y='264.758564042537'>2.4</text>
+      <text x='43.5' class='dataPointLabel' y='264.245512632929' style=' stroke: #fff; stroke-width: 2;'>7.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.245512632929'>7.5</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.956742724288' style=' stroke: #fff; stroke-width: 2;'>0.43</text>
+      <text x='43.5' class='dataPointLabel' y='264.956742724288'>0.43</text>
+      <text x='43.5' class='dataPointLabel' y='264.640864013274' style=' stroke: #fff; stroke-width: 2;'>3.57</text>
+      <text x='43.5' class='dataPointLabel' y='264.640864013274'>3.57</text>
+      <text x='43.5' class='dataPointLabel' y='264.961772640068' style=' stroke: #fff; stroke-width: 2;'>0.38</text>
+      <text x='43.5' class='dataPointLabel' y='264.961772640068'>0.38</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.832000812932' style=' stroke: #fff; stroke-width: 2;'>1.67</text>
+      <text x='43.5' class='dataPointLabel' y='264.832000812932'>1.67</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586' style=' stroke: #fff; stroke-width: 2;'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.556361428162' style=' stroke: #fff; stroke-width: 2;'>4.41</text>
+      <text x='43.5' class='dataPointLabel' y='264.556361428162'>4.41</text>
+      <text x='43.5' class='dataPointLabel' y='264.757558059381' style=' stroke: #fff; stroke-width: 2;'>2.41</text>
+      <text x='43.5' class='dataPointLabel' y='264.757558059381'>2.41</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.82495893084' style=' stroke: #fff; stroke-width: 2;'>1.74</text>
+      <text x='43.5' class='dataPointLabel' y='264.82495893084'>1.74</text>
+      <text x='43.5' class='dataPointLabel' y='264.982898286346' style=' stroke: #fff; stroke-width: 2;'>0.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.982898286346'>0.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.817917048747' style=' stroke: #fff; stroke-width: 2;'>1.81</text>
+      <text x='43.5' class='dataPointLabel' y='264.817917048747'>1.81</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171' style=' stroke: #fff; stroke-width: 2;'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='263.944723669256' style=' stroke: #fff; stroke-width: 2;'>10.49</text>
+      <text x='43.5' class='dataPointLabel' y='263.944723669256'>10.49</text>
+      <text x='43.5' class='dataPointLabel' y='258.991262608645' style=' stroke: #fff; stroke-width: 2;'>59.73</text>
+      <text x='43.5' class='dataPointLabel' y='258.991262608645'>59.73</text>
+      <text x='43.5' class='dataPointLabel' y='264.206279289841' style=' stroke: #fff; stroke-width: 2;'>7.89</text>
+      <text x='43.5' class='dataPointLabel' y='264.206279289841'>7.89</text>
+      <text x='43.5' class='dataPointLabel' y='263.677132149735' style=' stroke: #fff; stroke-width: 2;'>13.15</text>
+      <text x='43.5' class='dataPointLabel' y='263.677132149735'>13.15</text>
+      <text x='43.5' class='dataPointLabel' y='264.943664943259' style=' stroke: #fff; stroke-width: 2;'>0.56</text>
+      <text x='43.5' class='dataPointLabel' y='264.943664943259'>0.56</text>
+      <text x='43.5' class='dataPointLabel' y='263.49806714795' style=' stroke: #fff; stroke-width: 2;'>14.93</text>
+      <text x='43.5' class='dataPointLabel' y='263.49806714795'>14.93</text>
+      <text x='43.5' class='dataPointLabel' y='264.802827301405' style=' stroke: #fff; stroke-width: 2;'>1.96</text>
+      <text x='43.5' class='dataPointLabel' y='264.802827301405'>1.96</text>
+      <text x='43.5' class='dataPointLabel' y='264.968814522161' style=' stroke: #fff; stroke-width: 2;'>0.31</text>
+      <text x='43.5' class='dataPointLabel' y='264.968814522161'>0.31</text>
+      <text x='43.5' class='dataPointLabel' y='264.547307579757' style=' stroke: #fff; stroke-width: 2;'>4.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.547307579757'>4.5</text>
+      <text x='43.5' class='dataPointLabel' y='263.751574903286' style=' stroke: #fff; stroke-width: 2;'>12.41</text>
+      <text x='43.5' class='dataPointLabel' y='263.751574903286'>12.41</text>
+      <text x='43.5' class='dataPointLabel' y='94.6538542289679' style=' stroke: #fff; stroke-width: 2;'>1693.33</text>
+      <text x='43.5' class='dataPointLabel' y='94.6538542289679'>1693.33</text>
+      <text x='43.5' class='dataPointLabel' y='263.574521867813' style=' stroke: #fff; stroke-width: 2;'>14.17</text>
+      <text x='43.5' class='dataPointLabel' y='263.574521867813'>14.17</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.377296426377' style=' stroke: #fff; stroke-width: 2;'>6.19</text>
+      <text x='43.5' class='dataPointLabel' y='264.377296426377'>6.19</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391' style=' stroke: #fff; stroke-width: 2;'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586' style=' stroke: #fff; stroke-width: 2;'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.952718791664' style=' stroke: #fff; stroke-width: 2;'>0.47</text>
+      <text x='43.5' class='dataPointLabel' y='264.952718791664'>0.47</text>
+      <text x='43.5' class='dataPointLabel' y='264.932599128542' style=' stroke: #fff; stroke-width: 2;'>0.67</text>
+      <text x='43.5' class='dataPointLabel' y='264.932599128542'>0.67</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586' style=' stroke: #fff; stroke-width: 2;'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.849102526586'>1.5</text>
+      <text x='43.5' class='dataPointLabel' y='264.91247946542' style=' stroke: #fff; stroke-width: 2;'>0.87</text>
+      <text x='43.5' class='dataPointLabel' y='264.91247946542'>0.87</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.809869183498' style=' stroke: #fff; stroke-width: 2;'>1.89</text>
+      <text x='43.5' class='dataPointLabel' y='264.809869183498'>1.89</text>
+      <text x='43.5' class='dataPointLabel' y='264.866204240239' style=' stroke: #fff; stroke-width: 2;'>1.33</text>
+      <text x='43.5' class='dataPointLabel' y='264.866204240239'>1.33</text>
+      <text x='43.5' class='dataPointLabel' y='264.156986115192' style=' stroke: #fff; stroke-width: 2;'>8.38</text>
+      <text x='43.5' class='dataPointLabel' y='264.156986115192'>8.38</text>
+      <text x='43.5' class='dataPointLabel' y='264.734420446791' style=' stroke: #fff; stroke-width: 2;'>2.64</text>
+      <text x='43.5' class='dataPointLabel' y='264.734420446791'>2.64</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.890347835986' style=' stroke: #fff; stroke-width: 2;'>1.09</text>
+      <text x='43.5' class='dataPointLabel' y='264.890347835986'>1.09</text>
+      <text x='43.5' class='dataPointLabel' y='264.451739179928' style=' stroke: #fff; stroke-width: 2;'>5.45</text>
+      <text x='43.5' class='dataPointLabel' y='264.451739179928'>5.45</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.978874353722' style=' stroke: #fff; stroke-width: 2;'>0.21</text>
+      <text x='43.5' class='dataPointLabel' y='264.978874353722'>0.21</text>
+      <text x='43.5' class='dataPointLabel' y='264.97686238741' style=' stroke: #fff; stroke-width: 2;'>0.23</text>
+      <text x='43.5' class='dataPointLabel' y='264.97686238741'>0.23</text>
+      <text x='43.5' class='dataPointLabel' y='263.390426950248' style=' stroke: #fff; stroke-width: 2;'>16.0</text>
+      <text x='43.5' class='dataPointLabel' y='263.390426950248'>16.0</text>
+      <text x='43.5' class='dataPointLabel' y='255.841529346911' style=' stroke: #fff; stroke-width: 2;'>91.04</text>
+      <text x='43.5' class='dataPointLabel' y='255.841529346911'>91.04</text>
+      <text x='43.5' class='dataPointLabel' y='260.752739114967' style=' stroke: #fff; stroke-width: 2;'>42.22</text>
+      <text x='43.5' class='dataPointLabel' y='260.752739114967'>42.22</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.798803368781' style=' stroke: #fff; stroke-width: 2;'>2.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.798803368781'>2.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.744480278352' style=' stroke: #fff; stroke-width: 2;'>2.54</text>
+      <text x='43.5' class='dataPointLabel' y='264.744480278352'>2.54</text>
+      <text x='43.5' class='dataPointLabel' y='264.406469937904' style=' stroke: #fff; stroke-width: 2;'>5.9</text>
+      <text x='43.5' class='dataPointLabel' y='264.406469937904'>5.9</text>
+      <text x='43.5' class='dataPointLabel' y='264.195213475124' style=' stroke: #fff; stroke-width: 2;'>8.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.195213475124'>8.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.583522973377' style=' stroke: #fff; stroke-width: 2;'>4.14</text>
+      <text x='43.5' class='dataPointLabel' y='264.583522973377'>4.14</text>
+      <text x='43.5' class='dataPointLabel' y='264.497008421953' style=' stroke: #fff; stroke-width: 2;'>5.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.497008421953'>5.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.982898286346' style=' stroke: #fff; stroke-width: 2;'>0.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.982898286346'>0.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.881293987581' style=' stroke: #fff; stroke-width: 2;'>1.18</text>
+      <text x='43.5' class='dataPointLabel' y='264.881293987581'>1.18</text>
+      <text x='43.5' class='dataPointLabel' y='262.518239553914' style=' stroke: #fff; stroke-width: 2;'>24.67</text>
+      <text x='43.5' class='dataPointLabel' y='262.518239553914'>24.67</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='262.417641238304' style=' stroke: #fff; stroke-width: 2;'>25.67</text>
+      <text x='43.5' class='dataPointLabel' y='262.417641238304'>25.67</text>
+      <text x='43.5' class='dataPointLabel' y='264.654947777459' style=' stroke: #fff; stroke-width: 2;'>3.43</text>
+      <text x='43.5' class='dataPointLabel' y='264.654947777459'>3.43</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171' style=' stroke: #fff; stroke-width: 2;'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171' style=' stroke: #fff; stroke-width: 2;'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.698205053171'>3.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.479906708299' style=' stroke: #fff; stroke-width: 2;'>5.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.479906708299'>5.17</text>
+      <text x='43.5' class='dataPointLabel' y='264.0674536143' style=' stroke: #fff; stroke-width: 2;'>9.27</text>
+      <text x='43.5' class='dataPointLabel' y='264.0674536143'>9.27</text>
+      <text x='43.5' class='dataPointLabel' y='264.66500760902' style=' stroke: #fff; stroke-width: 2;'>3.33</text>
+      <text x='43.5' class='dataPointLabel' y='264.66500760902'>3.33</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.434637466275' style=' stroke: #fff; stroke-width: 2;'>5.62</text>
+      <text x='43.5' class='dataPointLabel' y='264.434637466275'>5.62</text>
+      <text x='43.5' class='dataPointLabel' y='263.414570545994' style=' stroke: #fff; stroke-width: 2;'>15.76</text>
+      <text x='43.5' class='dataPointLabel' y='263.414570545994'>15.76</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391' style=' stroke: #fff; stroke-width: 2;'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.899401684391'>1.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.957748707444' style=' stroke: #fff; stroke-width: 2;'>0.42</text>
+      <text x='43.5' class='dataPointLabel' y='264.957748707444'>0.42</text>
+      <text x='43.5' class='dataPointLabel' y='264.881293987581' style=' stroke: #fff; stroke-width: 2;'>1.18</text>
+      <text x='43.5' class='dataPointLabel' y='264.881293987581'>1.18</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.396410106343' style=' stroke: #fff; stroke-width: 2;'>6.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.396410106343'>6.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.798803368781' style=' stroke: #fff; stroke-width: 2;'>2.0</text>
+      <text x='43.5' class='dataPointLabel' y='264.798803368781'>2.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='43.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.34309299907' style=' stroke: #fff; stroke-width: 2;'>6.53</text>
+      <text x='140.5' class='dataPointLabel' y='264.34309299907'>6.53</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.731402497323' style=' stroke: #fff; stroke-width: 2;'>2.67</text>
+      <text x='140.5' class='dataPointLabel' y='264.731402497323'>2.67</text>
+      <text x='140.5' class='dataPointLabel' y='264.727378564698' style=' stroke: #fff; stroke-width: 2;'>2.71</text>
+      <text x='140.5' class='dataPointLabel' y='264.727378564698'>2.71</text>
+      <text x='140.5' class='dataPointLabel' y='261.111875101693' style=' stroke: #fff; stroke-width: 2;'>38.65</text>
+      <text x='140.5' class='dataPointLabel' y='261.111875101693'>38.65</text>
+      <text x='140.5' class='dataPointLabel' y='264.927569212761' style=' stroke: #fff; stroke-width: 2;'>0.72</text>
+      <text x='140.5' class='dataPointLabel' y='264.927569212761'>0.72</text>
+      <text x='140.5' class='dataPointLabel' y='264.034256170149' style=' stroke: #fff; stroke-width: 2;'>9.6</text>
+      <text x='140.5' class='dataPointLabel' y='264.034256170149'>9.6</text>
+      <text x='140.5' class='dataPointLabel' y='264.858156374991' style=' stroke: #fff; stroke-width: 2;'>1.41</text>
+      <text x='140.5' class='dataPointLabel' y='264.858156374991'>1.41</text>
+      <text x='140.5' class='dataPointLabel' y='261.604806848179' style=' stroke: #fff; stroke-width: 2;'>33.75</text>
+      <text x='140.5' class='dataPointLabel' y='261.604806848179'>33.75</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='263.58055776675' style=' stroke: #fff; stroke-width: 2;'>14.11</text>
+      <text x='140.5' class='dataPointLabel' y='263.58055776675'>14.11</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.624768282777' style=' stroke: #fff; stroke-width: 2;'>3.73</text>
+      <text x='140.5' class='dataPointLabel' y='264.624768282777'>3.73</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.949700842195' style=' stroke: #fff; stroke-width: 2;'>0.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.949700842195'>0.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.949700842195' style=' stroke: #fff; stroke-width: 2;'>0.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.949700842195'>0.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.715306766825' style=' stroke: #fff; stroke-width: 2;'>2.83</text>
+      <text x='140.5' class='dataPointLabel' y='264.715306766825'>2.83</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='253.732988651736' style=' stroke: #fff; stroke-width: 2;'>112.0</text>
+      <text x='140.5' class='dataPointLabel' y='253.732988651736'>112.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.867210223395' style=' stroke: #fff; stroke-width: 2;'>1.32</text>
+      <text x='140.5' class='dataPointLabel' y='264.867210223395'>1.32</text>
+      <text x='140.5' class='dataPointLabel' y='261.665165837545' style=' stroke: #fff; stroke-width: 2;'>33.15</text>
+      <text x='140.5' class='dataPointLabel' y='261.665165837545'>33.15</text>
+      <text x='140.5' class='dataPointLabel' y='264.611690501747' style=' stroke: #fff; stroke-width: 2;'>3.86</text>
+      <text x='140.5' class='dataPointLabel' y='264.611690501747'>3.86</text>
+      <text x='140.5' class='dataPointLabel' y='264.856144408678' style=' stroke: #fff; stroke-width: 2;'>1.43</text>
+      <text x='140.5' class='dataPointLabel' y='264.856144408678'>1.43</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.858156374991' style=' stroke: #fff; stroke-width: 2;'>1.41</text>
+      <text x='140.5' class='dataPointLabel' y='264.858156374991'>1.41</text>
+      <text x='140.5' class='dataPointLabel' y='264.523163984011' style=' stroke: #fff; stroke-width: 2;'>4.74</text>
+      <text x='140.5' class='dataPointLabel' y='264.523163984011'>4.74</text>
+      <text x='140.5' class='dataPointLabel' y='264.406469937904' style=' stroke: #fff; stroke-width: 2;'>5.9</text>
+      <text x='140.5' class='dataPointLabel' y='264.406469937904'>5.9</text>
+      <text x='140.5' class='dataPointLabel' y='264.245512632929' style=' stroke: #fff; stroke-width: 2;'>7.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.245512632929'>7.5</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.895377751766' style=' stroke: #fff; stroke-width: 2;'>1.04</text>
+      <text x='140.5' class='dataPointLabel' y='264.895377751766'>1.04</text>
+      <text x='140.5' class='dataPointLabel' y='264.320961369636' style=' stroke: #fff; stroke-width: 2;'>6.75</text>
+      <text x='140.5' class='dataPointLabel' y='264.320961369636'>6.75</text>
+      <text x='140.5' class='dataPointLabel' y='264.819929015059' style=' stroke: #fff; stroke-width: 2;'>1.79</text>
+      <text x='140.5' class='dataPointLabel' y='264.819929015059'>1.79</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.444697297836' style=' stroke: #fff; stroke-width: 2;'>5.52</text>
+      <text x='140.5' class='dataPointLabel' y='264.444697297836'>5.52</text>
+      <text x='140.5' class='dataPointLabel' y='264.74246831204' style=' stroke: #fff; stroke-width: 2;'>2.56</text>
+      <text x='140.5' class='dataPointLabel' y='264.74246831204'>2.56</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='262.987027704654' style=' stroke: #fff; stroke-width: 2;'>20.01</text>
+      <text x='140.5' class='dataPointLabel' y='262.987027704654'>20.01</text>
+      <text x='140.5' class='dataPointLabel' y='264.150950216256' style=' stroke: #fff; stroke-width: 2;'>8.44</text>
+      <text x='140.5' class='dataPointLabel' y='264.150950216256'>8.44</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.005082658622' style=' stroke: #fff; stroke-width: 2;'>9.89</text>
+      <text x='140.5' class='dataPointLabel' y='264.005082658622'>9.89</text>
+      <text x='140.5' class='dataPointLabel' y='264.954730757976' style=' stroke: #fff; stroke-width: 2;'>0.45</text>
+      <text x='140.5' class='dataPointLabel' y='264.954730757976'>0.45</text>
+      <text x='140.5' class='dataPointLabel' y='264.703234968952' style=' stroke: #fff; stroke-width: 2;'>2.95</text>
+      <text x='140.5' class='dataPointLabel' y='264.703234968952'>2.95</text>
+      <text x='140.5' class='dataPointLabel' y='264.698205053171' style=' stroke: #fff; stroke-width: 2;'>3.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.698205053171'>3.0</text>
+      <text x='140.5' class='dataPointLabel' y='262.311007023758' style=' stroke: #fff; stroke-width: 2;'>26.73</text>
+      <text x='140.5' class='dataPointLabel' y='262.311007023758'>26.73</text>
+      <text x='140.5' class='dataPointLabel' y='255.100119760869' style=' stroke: #fff; stroke-width: 2;'>98.41</text>
+      <text x='140.5' class='dataPointLabel' y='255.100119760869'>98.41</text>
+      <text x='140.5' class='dataPointLabel' y='262.829088349147' style=' stroke: #fff; stroke-width: 2;'>21.58</text>
+      <text x='140.5' class='dataPointLabel' y='262.829088349147'>21.58</text>
+      <text x='140.5' class='dataPointLabel' y='261.785883816277' style=' stroke: #fff; stroke-width: 2;'>31.95</text>
+      <text x='140.5' class='dataPointLabel' y='261.785883816277'>31.95</text>
+      <text x='140.5' class='dataPointLabel' y='264.916503398044' style=' stroke: #fff; stroke-width: 2;'>0.83</text>
+      <text x='140.5' class='dataPointLabel' y='264.916503398044'>0.83</text>
+      <text x='140.5' class='dataPointLabel' y='262.213426657617' style=' stroke: #fff; stroke-width: 2;'>27.7</text>
+      <text x='140.5' class='dataPointLabel' y='262.213426657617'>27.7</text>
+      <text x='140.5' class='dataPointLabel' y='264.075501479549' style=' stroke: #fff; stroke-width: 2;'>9.19</text>
+      <text x='140.5' class='dataPointLabel' y='264.075501479549'>9.19</text>
+      <text x='140.5' class='dataPointLabel' y='264.901413650703' style=' stroke: #fff; stroke-width: 2;'>0.98</text>
+      <text x='140.5' class='dataPointLabel' y='264.901413650703'>0.98</text>
+      <text x='140.5' class='dataPointLabel' y='262.994069586747' style=' stroke: #fff; stroke-width: 2;'>19.94</text>
+      <text x='140.5' class='dataPointLabel' y='262.994069586747'>19.94</text>
+      <text x='140.5' class='dataPointLabel' y='262.687244724138' style=' stroke: #fff; stroke-width: 2;'>22.99</text>
+      <text x='140.5' class='dataPointLabel' y='262.687244724138'>22.99</text>
+      <text x='140.5' class='dataPointLabel' y='29.7619047619048' style=' stroke: #fff; stroke-width: 2;'>2338.39</text>
+      <text x='140.5' class='dataPointLabel' y='29.7619047619048'>2338.39</text>
+      <text x='140.5' class='dataPointLabel' y='262.325090787943' style=' stroke: #fff; stroke-width: 2;'>26.59</text>
+      <text x='140.5' class='dataPointLabel' y='262.325090787943'>26.59</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='262.102768510446' style=' stroke: #fff; stroke-width: 2;'>28.8</text>
+      <text x='140.5' class='dataPointLabel' y='262.102768510446'>28.8</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.849102526586' style=' stroke: #fff; stroke-width: 2;'>1.5</text>
+      <text x='140.5' class='dataPointLabel' y='264.849102526586'>1.5</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.902419633859' style=' stroke: #fff; stroke-width: 2;'>0.97</text>
+      <text x='140.5' class='dataPointLabel' y='264.902419633859'>0.97</text>
+      <text x='140.5' class='dataPointLabel' y='264.905437583327' style=' stroke: #fff; stroke-width: 2;'>0.94</text>
+      <text x='140.5' class='dataPointLabel' y='264.905437583327'>0.94</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.739450362571' style=' stroke: #fff; stroke-width: 2;'>2.59</text>
+      <text x='140.5' class='dataPointLabel' y='264.739450362571'>2.59</text>
+      <text x='140.5' class='dataPointLabel' y='264.832000812932' style=' stroke: #fff; stroke-width: 2;'>1.67</text>
+      <text x='140.5' class='dataPointLabel' y='264.832000812932'>1.67</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.38936822425' style=' stroke: #fff; stroke-width: 2;'>6.07</text>
+      <text x='140.5' class='dataPointLabel' y='264.38936822425'>6.07</text>
+      <text x='140.5' class='dataPointLabel' y='264.875258088644' style=' stroke: #fff; stroke-width: 2;'>1.24</text>
+      <text x='140.5' class='dataPointLabel' y='264.875258088644'>1.24</text>
+      <text x='140.5' class='dataPointLabel' y='263.180176470624' style=' stroke: #fff; stroke-width: 2;'>18.09</text>
+      <text x='140.5' class='dataPointLabel' y='263.180176470624'>18.09</text>
+      <text x='140.5' class='dataPointLabel' y='264.223381003495' style=' stroke: #fff; stroke-width: 2;'>7.72</text>
+      <text x='140.5' class='dataPointLabel' y='264.223381003495'>7.72</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.646899912211' style=' stroke: #fff; stroke-width: 2;'>3.51</text>
+      <text x='140.5' class='dataPointLabel' y='264.646899912211'>3.51</text>
+      <text x='140.5' class='dataPointLabel' y='263.579551783594' style=' stroke: #fff; stroke-width: 2;'>14.12</text>
+      <text x='140.5' class='dataPointLabel' y='263.579551783594'>14.12</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.919521347512' style=' stroke: #fff; stroke-width: 2;'>0.8</text>
+      <text x='140.5' class='dataPointLabel' y='264.919521347512'>0.8</text>
+      <text x='140.5' class='dataPointLabel' y='264.942658960103' style=' stroke: #fff; stroke-width: 2;'>0.57</text>
+      <text x='140.5' class='dataPointLabel' y='264.942658960103'>0.57</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='245.381316489836' style=' stroke: #fff; stroke-width: 2;'>195.02</text>
+      <text x='140.5' class='dataPointLabel' y='245.381316489836'>195.02</text>
+      <text x='140.5' class='dataPointLabel' y='253.406044126005' style=' stroke: #fff; stroke-width: 2;'>115.25</text>
+      <text x='140.5' class='dataPointLabel' y='253.406044126005'>115.25</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.716312749981' style=' stroke: #fff; stroke-width: 2;'>2.82</text>
+      <text x='140.5' class='dataPointLabel' y='264.716312749981'>2.82</text>
+      <text x='140.5' class='dataPointLabel' y='264.286757942329' style=' stroke: #fff; stroke-width: 2;'>7.09</text>
+      <text x='140.5' class='dataPointLabel' y='264.286757942329'>7.09</text>
+      <text x='140.5' class='dataPointLabel' y='260.527398888002' style=' stroke: #fff; stroke-width: 2;'>44.46</text>
+      <text x='140.5' class='dataPointLabel' y='260.527398888002'>44.46</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.268650245519' style=' stroke: #fff; stroke-width: 2;'>7.27</text>
+      <text x='140.5' class='dataPointLabel' y='264.268650245519'>7.27</text>
+      <text x='140.5' class='dataPointLabel' y='264.497008421953' style=' stroke: #fff; stroke-width: 2;'>5.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.497008421953'>5.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.962778623224' style=' stroke: #fff; stroke-width: 2;'>0.37</text>
+      <text x='140.5' class='dataPointLabel' y='264.962778623224'>0.37</text>
+      <text x='140.5' class='dataPointLabel' y='264.64186999643' style=' stroke: #fff; stroke-width: 2;'>3.56</text>
+      <text x='140.5' class='dataPointLabel' y='264.64186999643'>3.56</text>
+      <text x='140.5' class='dataPointLabel' y='260.797002373835' style=' stroke: #fff; stroke-width: 2;'>41.78</text>
+      <text x='140.5' class='dataPointLabel' y='260.797002373835'>41.78</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='261.349287126531' style=' stroke: #fff; stroke-width: 2;'>36.29</text>
+      <text x='140.5' class='dataPointLabel' y='261.349287126531'>36.29</text>
+      <text x='140.5' class='dataPointLabel' y='264.392386173719' style=' stroke: #fff; stroke-width: 2;'>6.04</text>
+      <text x='140.5' class='dataPointLabel' y='264.392386173719'>6.04</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.220363054026' style=' stroke: #fff; stroke-width: 2;'>7.75</text>
+      <text x='140.5' class='dataPointLabel' y='264.220363054026'>7.75</text>
+      <text x='140.5' class='dataPointLabel' y='260.50727922488' style=' stroke: #fff; stroke-width: 2;'>44.66</text>
+      <text x='140.5' class='dataPointLabel' y='260.50727922488'>44.66</text>
+      <text x='140.5' class='dataPointLabel' y='264.749510194132' style=' stroke: #fff; stroke-width: 2;'>2.49</text>
+      <text x='140.5' class='dataPointLabel' y='264.749510194132'>2.49</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='262.756657561908' style=' stroke: #fff; stroke-width: 2;'>22.3</text>
+      <text x='140.5' class='dataPointLabel' y='262.756657561908'>22.3</text>
+      <text x='140.5' class='dataPointLabel' y='248.363050564501' style=' stroke: #fff; stroke-width: 2;'>165.38</text>
+      <text x='140.5' class='dataPointLabel' y='248.363050564501'>165.38</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='264.861174324459' style=' stroke: #fff; stroke-width: 2;'>1.38</text>
+      <text x='140.5' class='dataPointLabel' y='264.861174324459'>1.38</text>
+      <text x='140.5' class='dataPointLabel' y='264.506062270357' style=' stroke: #fff; stroke-width: 2;'>4.91</text>
+      <text x='140.5' class='dataPointLabel' y='264.506062270357'>4.91</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='263.770688583252' style=' stroke: #fff; stroke-width: 2;'>12.22</text>
+      <text x='140.5' class='dataPointLabel' y='263.770688583252'>12.22</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0' style=' stroke: #fff; stroke-width: 2;'>0.0</text>
+      <text x='140.5' class='dataPointLabel' y='265.0'>0.0</text>
+    </g>
+  </g>
+  <g transform='translate(283.0 30)'>
+    <rect x='0' class='key1' y='0' height='12' width='12'/>
+    <text x='17' class='keyText' y='12'>Afghanistan</text>
+    <rect x='0' class='key2' y='17' height='12' width='12'/>
+    <text x='17' class='keyText' y='29'>Albania</text>
+    <rect x='0' class='key3' y='34' height='12' width='12'/>
+    <text x='17' class='keyText' y='46'>Algeria</text>
+    <rect x='0' class='key4' y='51' height='12' width='12'/>
+    <text x='17' class='keyText' y='63'>Angola</text>
+    <rect x='0' class='key5' y='68' height='12' width='12'/>
+    <text x='17' class='keyText' y='80'>Argentina</text>
+    <rect x='0' class='key6' y='85' height='12' width='12'/>
+    <text x='17' class='keyText' y='97'>Australia</text>
+    <rect x='0' class='key7' y='102' height='12' width='12'/>
+    <text x='17' class='keyText' y='114'>Austria</text>
+    <rect x='0' class='key8' y='119' height='12' width='12'/>
+    <text x='17' class='keyText' y='131'>Bahrain</text>
+    <rect x='0' class='key9' y='136' height='12' width='12'/>
+    <text x='17' class='keyText' y='148'>Bangladesh</text>
+    <rect x='0' class='key10' y='153' height='12' width='12'/>
+    <text x='17' class='keyText' y='165'>Barbados</text>
+    <rect x='0' class='key11' y='170' height='12' width='12'/>
+    <text x='17' class='keyText' y='182'>Belgium</text>
+    <rect x='0' class='key12' y='187' height='12' width='12'/>
+    <text x='17' class='keyText' y='199'>Belize</text>
+    <rect x='0' class='key13' y='204' height='12' width='12'/>
+    <text x='17' class='keyText' y='216'>Bolivia</text>
+    <rect x='0' class='key14' y='221' height='12' width='12'/>
+    <text x='17' class='keyText' y='233'>Bosnia</text>
+    <rect x='0' class='key15' y='238' height='12' width='12'/>
+    <text x='17' class='keyText' y='250'>Brazil</text>
+    <rect x='0' class='key16' y='255' height='12' width='12'/>
+    <text x='17' class='keyText' y='267'>Bulgaria</text>
+    <rect x='0' class='key17' y='272' height='12' width='12'/>
+    <text x='17' class='keyText' y='284'>Burma (Myanmar)</text>
+    <rect x='0' class='key18' y='289' height='12' width='12'/>
+    <text x='17' class='keyText' y='301'>Cambodia</text>
+    <rect x='0' class='key19' y='306' height='12' width='12'/>
+    <text x='17' class='keyText' y='318'>Canada</text>
+    <rect x='0' class='key20' y='323' height='12' width='12'/>
+    <text x='17' class='keyText' y='335'>Canary Islands</text>
+    <rect x='0' class='key21' y='340' height='12' width='12'/>
+    <text x='17' class='keyText' y='352'>Ceylon</text>
+    <rect x='0' class='key22' y='357' height='12' width='12'/>
+    <text x='17' class='keyText' y='369'>Chad</text>
+    <rect x='0' class='key23' y='374' height='12' width='12'/>
+    <text x='17' class='keyText' y='386'>Chechnya</text>
+    <rect x='0' class='key24' y='391' height='12' width='12'/>
+    <text x='17' class='keyText' y='403'>Chile</text>
+    <rect x='0' class='key25' y='408' height='12' width='12'/>
+    <text x='17' class='keyText' y='420'>China</text>
+    <rect x='0' class='key26' y='425' height='12' width='12'/>
+    <text x='17' class='keyText' y='437'>Colombia</text>
+    <rect x='0' class='key27' y='442' height='12' width='12'/>
+    <text x='17' class='keyText' y='454'>Costa Rica</text>
+    <rect x='0' class='key28' y='459' height='12' width='12'/>
+    <text x='17' class='keyText' y='471'>Croatia</text>
+    <rect x='0' class='key29' y='476' height='12' width='12'/>
+    <text x='17' class='keyText' y='488'>Cuba</text>
+    <rect x='0' class='key30' y='493' height='12' width='12'/>
+    <text x='17' class='keyText' y='505'>Cyprus</text>
+    <rect x='0' class='key31' y='510' height='12' width='12'/>
+    <text x='17' class='keyText' y='522'>Denmark</text>
+    <rect x='0' class='key32' y='527' height='12' width='12'/>
+    <text x='17' class='keyText' y='539'>Djibouti</text>
+    <rect x='0' class='key33' y='544' height='12' width='12'/>
+    <text x='17' class='keyText' y='556'>Dominican Republic</text>
+    <rect x='0' class='key34' y='561' height='12' width='12'/>
+    <text x='17' class='keyText' y='573'>Ecuador</text>
+    <rect x='0' class='key35' y='578' height='12' width='12'/>
+    <text x='17' class='keyText' y='590'>Egypt</text>
+    <rect x='0' class='key36' y='595' height='12' width='12'/>
+    <text x='17' class='keyText' y='607'>El Salvador</text>
+    <rect x='0' class='key37' y='612' height='12' width='12'/>
+    <text x='17' class='keyText' y='624'>Eritrea</text>
+    <rect x='0' class='key38' y='629' height='12' width='12'/>
+    <text x='17' class='keyText' y='641'>Ethiopia</text>
+    <rect x='0' class='key39' y='646' height='12' width='12'/>
+    <text x='17' class='keyText' y='658'>FRY (Kosovo)</text>
+    <rect x='0' class='key40' y='663' height='12' width='12'/>
+    <text x='17' class='keyText' y='675'>Falkland Islands (Islas Malvinas)</text>
+    <rect x='0' class='key41' y='680' height='12' width='12'/>
+    <text x='17' class='keyText' y='692'>Federal Republic of Germany</text>
+    <rect x='0' class='key42' y='697' height='12' width='12'/>
+    <text x='17' class='keyText' y='709'>France</text>
+    <rect x='0' class='key43' y='714' height='12' width='12'/>
+    <text x='17' class='keyText' y='726'>Georgia</text>
+    <rect x='0' class='key44' y='731' height='12' width='12'/>
+    <text x='17' class='keyText' y='743'>Germany</text>
+    <rect x='0' class='key45' y='748' height='12' width='12'/>
+    <text x='17' class='keyText' y='760'>Ghana</text>
+    <rect x='0' class='key46' y='765' height='12' width='12'/>
+    <text x='17' class='keyText' y='777'>Greece</text>
+    <rect x='0' class='key47' y='782' height='12' width='12'/>
+    <text x='17' class='keyText' y='794'>Guatemala</text>
+    <rect x='0' class='key48' y='799' height='12' width='12'/>
+    <text x='17' class='keyText' y='811'>Honduras</text>
+    <rect x='0' class='key49' y='816' height='12' width='12'/>
+    <text x='17' class='keyText' y='828'>Hungary</text>
+    <rect x='0' class='key50' y='833' height='12' width='12'/>
+    <text x='17' class='keyText' y='845'>India</text>
+    <rect x='0' class='key51' y='850' height='12' width='12'/>
+    <text x='17' class='keyText' y='862'>Indonesia</text>
+    <rect x='0' class='key52' y='867' height='12' width='12'/>
+    <text x='17' class='keyText' y='879'>Iran</text>
+    <rect x='0' class='key53' y='884' height='12' width='12'/>
+    <text x='17' class='keyText' y='896'>Iraq</text>
+    <rect x='0' class='key54' y='901' height='12' width='12'/>
+    <text x='17' class='keyText' y='913'>Ireland</text>
+    <rect x='0' class='key55' y='918' height='12' width='12'/>
+    <text x='17' class='keyText' y='930'>Israel</text>
+    <rect x='0' class='key56' y='935' height='12' width='12'/>
+    <text x='17' class='keyText' y='947'>Italy</text>
+    <rect x='0' class='key57' y='952' height='12' width='12'/>
+    <text x='17' class='keyText' y='964'>Japan</text>
+    <rect x='0' class='key58' y='969' height='12' width='12'/>
+    <text x='17' class='keyText' y='981'>Jordan</text>
+    <rect x='0' class='key59' y='986' height='12' width='12'/>
+    <text x='17' class='keyText' y='998'>Kashmir</text>
+    <rect x='0' class='key60' y='1003' height='12' width='12'/>
+    <text x='17' class='keyText' y='1015'>Kenya</text>
+    <rect x='0' class='key61' y='1020' height='12' width='12'/>
+    <text x='17' class='keyText' y='1032'>Kuwait</text>
+    <rect x='0' class='key62' y='1037' height='12' width='12'/>
+    <text x='17' class='keyText' y='1049'>Laos</text>
+    <rect x='0' class='key63' y='1054' height='12' width='12'/>
+    <text x='17' class='keyText' y='1066'>Lebanon</text>
+    <rect x='0' class='key64' y='1071' height='12' width='12'/>
+    <text x='17' class='keyText' y='1083'>Lesotho</text>
+    <rect x='0' class='key65' y='1088' height='12' width='12'/>
+    <text x='17' class='keyText' y='1100'>Libya</text>
+    <rect x='0' class='key66' y='1105' height='12' width='12'/>
+    <text x='17' class='keyText' y='1117'>Luxembourg</text>
+    <rect x='0' class='key67' y='1122' height='12' width='12'/>
+    <text x='17' class='keyText' y='1134'>Macedonia, The Republic of</text>
+    <rect x='0' class='key68' y='1139' height='12' width='12'/>
+    <text x='17' class='keyText' y='1151'>Malaysia</text>
+    <rect x='0' class='key69' y='1156' height='12' width='12'/>
+    <text x='17' class='keyText' y='1168'>Malta</text>
+    <rect x='0' class='key70' y='1173' height='12' width='12'/>
+    <text x='17' class='keyText' y='1185'>Mexico</text>
+    <rect x='0' class='key71' y='1190' height='12' width='12'/>
+    <text x='17' class='keyText' y='1202'>Morocco</text>
+    <rect x='0' class='key72' y='1207' height='12' width='12'/>
+    <text x='17' class='keyText' y='1219'>Mozambique</text>
+    <rect x='0' class='key73' y='1224' height='12' width='12'/>
+    <text x='17' class='keyText' y='1236'>Nepal</text>
+    <rect x='0' class='key74' y='1241' height='12' width='12'/>
+    <text x='17' class='keyText' y='1253'>Netherlands</text>
+    <rect x='0' class='key75' y='1258' height='12' width='12'/>
+    <text x='17' class='keyText' y='1270'>New Zealand</text>
+    <rect x='0' class='key76' y='1275' height='12' width='12'/>
+    <text x='17' class='keyText' y='1287'>Nicaragua</text>
+    <rect x='0' class='key77' y='1292' height='12' width='12'/>
+    <text x='17' class='keyText' y='1304'>Nigeria</text>
+    <rect x='0' class='key78' y='1309' height='12' width='12'/>
+    <text x='17' class='keyText' y='1321'>Northern Ireland (UK)</text>
+    <rect x='0' class='key79' y='1326' height='12' width='12'/>
+    <text x='17' class='keyText' y='1338'>Norway</text>
+    <rect x='0' class='key80' y='1343' height='12' width='12'/>
+    <text x='17' class='keyText' y='1355'>Pakistan</text>
+    <rect x='0' class='key81' y='1360' height='12' width='12'/>
+    <text x='17' class='keyText' y='1372'>Panama</text>
+    <rect x='0' class='key82' y='1377' height='12' width='12'/>
+    <text x='17' class='keyText' y='1389'>Papua New Guinea</text>
+    <rect x='0' class='key83' y='1394' height='12' width='12'/>
+    <text x='17' class='keyText' y='1406'>Paraguay</text>
+    <rect x='0' class='key84' y='1411' height='12' width='12'/>
+    <text x='17' class='keyText' y='1423'>Peru</text>
+    <rect x='0' class='key85' y='1428' height='12' width='12'/>
+    <text x='17' class='keyText' y='1440'>Philippines</text>
+    <rect x='0' class='key86' y='1445' height='12' width='12'/>
+    <text x='17' class='keyText' y='1457'>Poland</text>
+    <rect x='0' class='key87' y='1462' height='12' width='12'/>
+    <text x='17' class='keyText' y='1474'>Portugal</text>
+    <rect x='0' class='key88' y='1479' height='12' width='12'/>
+    <text x='17' class='keyText' y='1491'>Puerto Rico</text>
+    <rect x='0' class='key89' y='1496' height='12' width='12'/>
+    <text x='17' class='keyText' y='1508'>Qatar</text>
+    <rect x='0' class='key90' y='1513' height='12' width='12'/>
+    <text x='17' class='keyText' y='1525'>Russia</text>
+    <rect x='0' class='key91' y='1530' height='12' width='12'/>
+    <text x='17' class='keyText' y='1542'>Saudi Arabia</text>
+    <rect x='0' class='key92' y='1547' height='12' width='12'/>
+    <text x='17' class='keyText' y='1559'>Sierra Leone</text>
+    <rect x='0' class='key93' y='1564' height='12' width='12'/>
+    <text x='17' class='keyText' y='1576'>Somalia</text>
+    <rect x='0' class='key94' y='1581' height='12' width='12'/>
+    <text x='17' class='keyText' y='1593'>South Africa</text>
+    <rect x='0' class='key95' y='1598' height='12' width='12'/>
+    <text x='17' class='keyText' y='1610'>Spain</text>
+    <rect x='0' class='key96' y='1615' height='12' width='12'/>
+    <text x='17' class='keyText' y='1627'>Sri Lanka</text>
+    <rect x='0' class='key97' y='1632' height='12' width='12'/>
+    <text x='17' class='keyText' y='1644'>Sudan</text>
+    <rect x='0' class='key98' y='1649' height='12' width='12'/>
+    <text x='17' class='keyText' y='1661'>Swaziland</text>
+    <rect x='0' class='key99' y='1666' height='12' width='12'/>
+    <text x='17' class='keyText' y='1678'>Sweden</text>
+    <rect x='0' class='key100' y='1683' height='12' width='12'/>
+    <text x='17' class='keyText' y='1695'>Switzerland</text>
+    <rect x='0' class='key101' y='1700' height='12' width='12'/>
+    <text x='17' class='keyText' y='1712'>Syria</text>
+    <rect x='0' class='key102' y='1717' height='12' width='12'/>
+    <text x='17' class='keyText' y='1729'>Taiwan</text>
+    <rect x='0' class='key103' y='1734' height='12' width='12'/>
+    <text x='17' class='keyText' y='1746'>Tajikistan</text>
+    <rect x='0' class='key104' y='1751' height='12' width='12'/>
+    <text x='17' class='keyText' y='1763'>Tanzania</text>
+    <rect x='0' class='key105' y='1768' height='12' width='12'/>
+    <text x='17' class='keyText' y='1780'>Thailand</text>
+    <rect x='0' class='key106' y='1785' height='12' width='12'/>
+    <text x='17' class='keyText' y='1797'>Trinidad and Tobago</text>
+    <rect x='0' class='key107' y='1802' height='12' width='12'/>
+    <text x='17' class='keyText' y='1814'>Trucial Oman States</text>
+    <rect x='0' class='key108' y='1819' height='12' width='12'/>
+    <text x='17' class='keyText' y='1831'>Tunisia</text>
+    <rect x='0' class='key109' y='1836' height='12' width='12'/>
+    <text x='17' class='keyText' y='1848'>Turkey</text>
+    <rect x='0' class='key110' y='1853' height='12' width='12'/>
+    <text x='17' class='keyText' y='1865'>Uganda</text>
+    <rect x='0' class='key111' y='1870' height='12' width='12'/>
+    <text x='17' class='keyText' y='1882'>United Arab Emirates</text>
+    <rect x='0' class='key112' y='1887' height='12' width='12'/>
+    <text x='17' class='keyText' y='1899'>United Kingdom</text>
+    <rect x='0' class='key113' y='1904' height='12' width='12'/>
+    <text x='17' class='keyText' y='1916'>United States</text>
+    <rect x='0' class='key114' y='1921' height='12' width='12'/>
+    <text x='17' class='keyText' y='1933'>Uruguay</text>
+    <rect x='0' class='key115' y='1938' height='12' width='12'/>
+    <text x='17' class='keyText' y='1950'>Uzbekistan</text>
+    <rect x='0' class='key116' y='1955' height='12' width='12'/>
+    <text x='17' class='keyText' y='1967'>Venezuela</text>
+    <rect x='0' class='key117' y='1972' height='12' width='12'/>
+    <text x='17' class='keyText' y='1984'>West Bank/Gaza</text>
+    <rect x='0' class='key118' y='1989' height='12' width='12'/>
+    <text x='17' class='keyText' y='2001'>Western Sahara</text>
+    <rect x='0' class='key119' y='2006' height='12' width='12'/>
+    <text x='17' class='keyText' y='2018'>Yemen</text>
+    <rect x='0' class='key120' y='2023' height='12' width='12'/>
+    <text x='17' class='keyText' y='2035'>Yugoslavia</text>
+    <rect x='0' class='key121' y='2040' height='12' width='12'/>
+    <text x='17' class='keyText' y='2052'>Zaire (Belgian Congo)</text>
+  </g>
+</svg>
